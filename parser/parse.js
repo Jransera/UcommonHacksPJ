@@ -5,11 +5,23 @@ const csv = require('csv-parser');
 
 const routes = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/routes.geojson')));
 
-const results = [];
-fs.createReadStream(path.join(__dirname, '../data/burgs.csv'))
-    .pipe(csv())
-    .on('data', (data) => results.push(data))
-    .on('end', () => {
-        console.log(routes);
-        console.log(results);
+const getBurgs = () => {
+    return new Promise((fulfill) => {
+        const results = [];
+        fs.createReadStream(path.join(__dirname, '../data/burgs.csv'))
+            .pipe(csv())
+            .on('data', (data) => results.push(data))
+            .on('end', () => {
+                fulfill(results);
+            });
     });
+};
+
+const parse = async () => {
+    const burgs = await getBurgs();
+    
+};
+
+(async () => {
+    await parse();
+})();
