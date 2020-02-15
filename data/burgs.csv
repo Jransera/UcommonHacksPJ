@@ -1,0 +1,310 @@
+Id,Burg,Province,State,Culture,Religion,Population,Longitude,Latitude,Elevation (ft),Capital,Port,Citadel,Walls,Plaza,Temple,Shanty Town
+1,Nurkun,Beratil Province,Republic of Khun,Yotunn,Old Yotunn Faith,21606,-70.31103896103897,-13.847084415584419,40,capital,,citadel,walls,plaza,,shanty town
+2,A'tavhei,A'tavhei County,Kingdom of Azhor,Dokalfar,Dokalfarism,65155,38.94983766233767,42.13846753246753,40,capital,port,citadel,walls,plaza,temple,shanty town
+3,Doramar,Orerionle County,Principality of Doramar,Quenian,Quenian Deities,23893,77.0478896103896,-16.247571428571433,11,capital,port,citadel,walls,,temple,shanty town
+4,Eset,Helsoyra County,Principality of Esetia,Norse,Norse Forefathers,5147,-17.34390584415584,31.851993506493507,24,capital,,citadel,walls,,,
+5,Hart,Unul Province,Dinylan Theocracy,Yotunn,Uledhorgian Beliefs,12489,8.169399350649357,0.24609740259740676,40,capital,,citadel,walls,,temple,shanty town
+6,Debrok,Litcairn Parish,Sletian Theocracy,Dail,Thorbornese Deities,5798,68.29772727272729,-26.62387012987014,24,capital,port,citadel,walls,,temple,shanty town
+7,Dister,Dister Earldom,Kingdom of Wetsia,Dail,Eatfalow Deities,23024,51.28214610389611,-15.081399350649363,11,capital,,citadel,walls,plaza,temple,shanty town
+8,Mer,Mer Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,18207,-39.33701298701298,-9.278415584415583,11,capital,port,citadel,walls,plaza,,shanty town
+9,Bazanero,Bazanero Province,Republic of Nurnan,Yotunn,Way of Vigkabine,52018,18.58441558441558,-7.1876688311688355,83,capital,port,citadel,walls,plaza,temple,shanty town
+10,Laudugar,Faldalia Province,Republic of Rosenia,Norse,Norse Forefathers,10148,-6.96915584415585,27.658110389610385,40,capital,port,citadel,walls,,,shanty town
+11,Azad,Boz County,Principality of Durk,Ugluk,Ugluk Beliefs,5357,-56.37272727272728,-15.395785714285722,40,capital,port,citadel,walls,,,
+12,Drandovhei,Rrharran Parish,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,16431,35.38782467532468,21.30843506493506,11,capital,port,citadel,walls,plaza,temple,
+13,Auryvein,Cloudhol Parish,Sletwelian Theocracy,Gozdor,Gozdor Religion,8762,-22.497983766233773,17.639561688311687,59,capital,,citadel,walls,,temple,shanty town
+14,Vartec,Sigka Earldom,Kingdom of Theod,Yotunn,Old Yotunn Faith,4584,-29.347889610389615,-9.355850649350643,24,capital,port,citadel,walls,,,
+15,Molon,Tyvahethath Province,Venilian Theocracy,Trow,Hlauggian Pantheon,18701,20.365422077922076,25.6447987012987,59,capital,port,citadel,walls,plaza,temple,shanty town
+16,Hrimar,Jans County,Duchy of Vadvia,Norse,Norse Forefathers,5009,-9.83425324675325,17.204376623376625,59,capital,port,citadel,walls,,,
+17,Bril,Bril Governorate,Republic of Sholabu,Yotunn,Way of Vigkabine,5333,20.597727272727283,2.4917142857142878,83,capital,port,citadel,walls,plaza,,
+18,Jorgath,Beratil Province,Republic of Khun,Yotunn,Old Yotunn Faith,4439,-69.72253246753247,-17.79317532467533,24,,,,,plaza,,
+19,Gomroldung,Gotharb Deanery,Dinylan Theocracy,Yotunn,Yotunnism,33792,-2.0133116883116884,-1.6897792207792293,109,,port,citadel,walls,plaza,temple,shanty town
+20,Tadnahu,,Neutrals,Yoruba,Yoruba Deities,5132,-12.185181818181817,-6.702925324675327,1776,,,,,plaza,,
+21,Curmide,Litcairn Parish,Sletian Theocracy,Dail,Thorbornese Deities,8905,75.15227922077923,-21.839931818181824,11,,,citadel,,,temple,
+22,Kakhaz,Mer Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,3293,-45.24685714285715,-12.145061688311685,40,,,citadel,,plaza,,
+23,Krystadvog,Skjeria County,Principality of Esetia,Norse,Norse Forefathers,2951,-15.457587662337659,26.539948051948052,83,,,,,plaza,,
+24,Gunnerg,Gotharb Deanery,Dinylan Theocracy,Yotunn,Yotunnism,6064,-6.039935064935065,-4.709746753246755,109,,port,citadel,walls,,temple,
+25,Dogbutumn,Eagwelia Parish,Sletian Theocracy,Dail,Thorbornese Deities,32811,58.61834415584417,-24.068512987012994,24,,port,citadel,walls,plaza,temple,shanty town
+26,Rhishith,Kliavoshi County,Principality of Durk,Rakhnid,Rakhnid Beliefs,3892,-53.51537337662338,-8.779733766233761,1496,,,,walls,,,shanty town
+27,Neverf,Fadowia County,Kingdom of Wetsia,Dail,Eatfalow Deities,2302,56.22405194805194,-17.107100649350656,109,,,,,plaza,,
+28,Dogragoon,Dimespinia Earldom,Kingdom of Wetsia,Dail,Eatfalow Deities,30597,48.39691558441558,-21.590590909090906,40,,port,,walls,,,shanty town
+29,Shathava,Gotharb Deanery,Dinylan Theocracy,Yotunn,Yotunnism,13090,-1.0066558441558442,-5.406662337662347,24,,port,,,,temple,
+30,Stoney,Whidia Parish,Sletwelian Theocracy,Gozdor,Gozdor Religion,9916,-13.9290194805195,15.906564935064935,24,,,citadel,,,temple,
+31,Deebrook,Deebrook Province,Kingdom of Wetsia,Dail,Eatfalow Deities,1896,60.591389610389626,-2.919448051948052,40,,,,,,,
+32,Moshavew,Litcairn Parish,Sletian Theocracy,Dail,Thorbornese Deities,8907,72.16948051948054,-27.940266233766238,24,,port,,,,temple,
+33,Blakguch,,Neutrals,Anor,Anor Shamanism,9483,60.80820779220781,25.58904545454545,24,,,,,,,
+34,Harquelrandor,Harquelrandor Province,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,23086,46.242672077922094,26.46870779220779,109,,,citadel,walls,,temple,shanty town
+35,Uledhorgu,Unul Province,Dinylan Theocracy,Yotunn,Uledhorgian Beliefs,15762,12.31372402597404,0.08193506493505964,207,,,citadel,,plaza,temple,
+36,Badabhar,Hatreo Province,Dinylan Theocracy,Yotunn,Uledhorgian Beliefs,58366,15.254707792207796,3.1886298701298657,24,,port,citadel,walls,plaza,temple,shanty town
+37,Nitdare,Nitdare Parish,Sletian Theocracy,Dail,Thorbornese Deities,19346,79.25633766233767,-7.701837662337667,11,,,,,,temple,
+38,Yragganelot,Harlythaggaust Parish,Venilian Theocracy,Trow,Hlauggian Pantheon,21717,24.469480519480527,30.98781818181818,40,,port,citadel,walls,plaza,temple,shanty town
+39,Sikliht,Mutumnia Parish,Sletian Theocracy,Dail,Thorbornese Deities,21687,64.77443181818182,-22.13573376623377,109,,,,walls,plaza,temple,shanty town
+40,Crystall,Dister Earldom,Kingdom of Wetsia,Dail,Eatfalow Deities,10359,48.20332792207793,-18.61398701298701,11,,,citadel,,plaza,,
+41,Gabirarak,Guhal Governorate,Republic of Nurnan,Yotunn,Way of Vigkabine,16746,12.15730519480519,-7.265103896103895,83,,port,citadel,walls,plaza,,shanty town
+42,Claymond,Eagwelia Parish,Sletian Theocracy,Dail,Thorbornese Deities,7575,59.414376623376654,-20.041889610389617,109,,,citadel,,,temple,
+43,Baragz,Mer Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,1781,-41.89701623376623,-10.82247077922078,11,,,citadel,walls,,,shanty town
+44,Brociragz,Zugbeorn Barony,Kingdom of Theod,Yotunn,Old Yotunn Faith,2851,-26.077032467532476,-0.5669707792207817,24,,,,,,,
+45,Elhadow,Rovewell County,Kingdom of Wetsia,Dail,Eatfalow Deities,2324,45.99642857142857,-12.066077922077923,24,,port,citadel,,,,
+46,Hlaugga Lin,Tyvahethath Province,Venilian Theocracy,Trow,Hlauggian Pantheon,18296,15.487012987012974,24.173532467532468,11,,port,,walls,plaza,temple,shanty town
+47,Grimrolwo,Grimrolwo Province,Dinylan Theocracy,Yotunn,Yotunnism,33246,1.9823376623376419,-10.170467532467526,24,,,citadel,walls,plaza,temple,shanty town
+48,Ideverun,Suncall Barony,Kingdom of Azhor,Anor,Anor Shamanism,1736,57.62252922077923,25.48218506493506,40,,,citadel,,,,
+49,Govalur,Faldalia Province,Republic of Rosenia,Norse,Norse Forefathers,1862,-8.804366883116884,23.981493506493507,83,,,,,,,
+50,Henona,Henona County,Principality of Doramar,Quenian,Quenian Deities,57206,74.64740259740262,-20.119324675324677,24,,port,citadel,walls,plaza,temple,shanty town
+51,Grastall,Freyster Parish,Sletian Theocracy,Dail,Thorbornese Deities,13415,48.47435064935064,-25.30747402597403,11,,port,,walls,plaza,temple,shanty town
+52,Ostad,Ostad Department,Republic of Rosenia,Norse,Norse Forefathers,15119,-6.845259740259749,32.86174675324675,83,,,citadel,walls,plaza,,shanty town
+53,Shathiz,Shathiz County,Butharian Empire,Yotunn,Old Yotunn Faith,12290,-33.72451948051949,8.265272727272716,83,,,,walls,plaza,,shanty town
+54,Freyshield,,Neutrals,Anor,Anor Shamanism,2190,58.69577922077923,33.27989610389611,24,,,citadel,walls,,,
+55,Iole,Iole Land,Dinylan Theocracy,Yotunn,Yotunnism,6355,-12.436071428571424,-2.8667922077922086,11,,,,walls,,temple,shanty town
+56,Myshell,Smotland County,Kingdom of Azhor,Anor,Anor Shamanism,10977,52.084373376623375,33.859110389610386,83,,,,,plaza,,
+57,Szoberwinlean,Szoberwinlean County,Kingdom of Azhor,Dokalfar,Dokalfarism,11701,36.385188311688324,39.793733766233764,59,,,citadel,,plaza,,
+58,Bothabar,Theod Province,Republic of Khun,Yotunn,Old Yotunn Faith,1559,-68.34418831168833,3.4364220779220744,24,,,citadel,,,,
+59,Uzine,Uzine Barony,Kingdom of Theod,Yotunn,Old Yotunn Faith,22621,-31.28376623376623,6.208597402597405,59,,port,,walls,,,shanty town
+60,Skjerdur,,Neutrals,Norse,Norse Forefathers,1548,-54.50189610389611,18.266785714285717,83,,,citadel,,plaza,,
+61,Cryshelder,Smotland County,Kingdom of Azhor,Anor,Anor Shamanism,3782,56.95968506493506,31.19069805194805,83,,,citadel,walls,,,
+62,Tighe,Vigbeorn Department,Republic of Khun,Yotunn,Old Yotunn Faith,6697,-84.13164935064935,-0.43378246753246685,11,,,,,,,
+63,Sprinsidefo,Knigh Parish,Sletian Theocracy,Dail,Thorbornese Deities,8204,71.98363636363638,-2.495103896103892,40,,,citadel,,plaza,temple,
+64,Zircarodravet,Rrharran Parish,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,2189,39.069087662337665,29.97496753246753,139,,,citadel,,,temple,
+65,Nehavebon,Rovewell County,Kingdom of Wetsia,Dail,Eatfalow Deities,1655,43.79417532467531,-13.23379870129871,11,,,,,,,
+66,Idhetheas,Ulrenhetha Parish,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,10601,45.872532467532466,20.20885714285714,11,,,,,plaza,temple,
+67,Winfore,Eagwelia Parish,Sletian Theocracy,Dail,Thorbornese Deities,1745,57.37009090909092,-21.201866883116892,83,,,,walls,,temple,shanty town
+68,Cageminebon,Eagwelia Parish,Sletian Theocracy,Dail,Thorbornese Deities,1963,61.14427597402596,-25.889785714285708,24,,,,,,temple,
+69,Grimegraven,Eagrore County,Kingdom of Wetsia,Dail,Eatfalow Deities,11132,44.215422077922085,-8.19432467532468,11,,port,citadel,,,,
+70,Stordur,,Neutrals,Norse,Norse Forefathers,4025,-50.02769805194806,20.673467532467534,59,,,citadel,,,,
+71,Churnan,Gotharb Deanery,Dinylan Theocracy,Yotunn,Yotunnism,11379,-6.761629870129866,-6.760227272727278,11,,,citadel,walls,,temple,shanty town
+72,Moretheire,Ty'at Province,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,2791,40.122204545454565,25.44191883116883,83,,,citadel,,,temple,
+73,Sleeglen,Fadowia County,Kingdom of Wetsia,Dail,Eatfalow Deities,1669,59.12012337662338,-12.797064935064938,430,,,,walls,,,
+74,Shimber,,Neutrals,Anor,Anor Shamanism,20408,62.04252272727271,32.11682142857143,11,,,citadel,walls,,temple,shanty town
+75,Sleeham,,Neutrals,Anor,Anor Shamanism,3780,66.81716883116883,26.990620129870127,11,,,citadel,,,,
+76,Shathiz,Beratil Province,Republic of Khun,Yotunn,Old Yotunn Faith,2508,-64.65827922077924,-15.860396103896107,40,,port,,walls,plaza,,shanty town
+77,Monzarkud,Bazanero Province,Republic of Nurnan,Yotunn,Way of Vigkabine,4793,25.36617857142855,-6.252253246753249,24,,,citadel,walls,,,shanty town
+78,Peloni,Te'ruhn County,Kingdom of Azhor,Dokalfar,Dokalfarism,2618,33.37451298701299,31.374993506493507,11,,port,,,,,
+79,Tyrybraajha,Tyrybraajha County,Kingdom of Azhor,Dokalfar,Dokalfarism,23872,39.132584415584404,37.500107142857146,59,,,,walls,,temple,shanty town
+80,Obreach,,Neutrals,Dail,Eatfalow Deities,2462,63.883928571428584,0.16866233766234018,59,,port,citadel,walls,,,shanty town
+81,Velwedhor,Bazanero Province,Republic of Nurnan,Yotunn,Way of Vigkabine,1513,21.75925324675326,-7.280590909090918,59,,,citadel,,,,
+82,Whater,Mufront County,Kingdom of Azhor,Anor,Anor Shamanism,6777,50.22128571428573,39.93776298701299,11,,,,,,,
+83,Buiallotlar,Tyvahethath Province,Venilian Theocracy,Trow,Hlauggian Pantheon,8031,16.837480519480536,27.60080844155844,207,,,citadel,,,temple,
+84,Valmen,,Neutrals,Norse,Norse Forefathers,2167,-53.524665584415594,21.95734090909091,24,,,citadel,,plaza,,
+85,Bralgag,Nuzilara Margrave,Butharian Empire,Ugluk,Ugluk Beliefs,11576,-58.4247564935065,-5.120152597402601,1496,,,,walls,plaza,,
+86,Kushadyon,Kushadyon Barony,Kingdom of Theod,Yoruba,Yoruba Deities,20534,-15.332142857142856,-5.0969220779220805,287,,port,,,,,
+87,Thorborne,Souhpeakia Parish,Sletian Theocracy,Dail,Thorbornese Deities,11912,46.3681168831169,-23.371597402597416,11,,,citadel,,plaza,temple,
+88,Theod,Theod Province,Republic of Khun,Yotunn,Old Yotunn Faith,26578,-60.70909090909092,-1.2251688311688298,24,,port,citadel,walls,,,shanty town
+89,Vrurgadh,Boz County,Principality of Durk,Ugluk,Ugluk Beliefs,2502,-61.89075000000001,-12.34019805194805,482,,,citadel,,,,
+90,Okerko,,Neutrals,Norse,Norse Forefathers,23849,-49.39118181818182,25.068681818181815,11,,,citadel,walls,plaza,,shanty town
+91,Hisliren,Skjeria County,Principality of Esetia,Norse,Norse Forefathers,11147,-23.140694805194812,24.988149350649344,40,,,,,,,
+92,Heatle,Mutumnia Parish,Sletian Theocracy,Dail,Thorbornese Deities,11098,64.43216883116884,-26.215012987012997,24,,,citadel,,,temple,
+93,Dolalarila-Did,Tyrybraajha County,Kingdom of Azhor,Dokalfar,Dokalfarism,1489,44.60724350649349,31.139590909090906,171,,,citadel,,plaza,,
+94,Merakaymer,Ulrenhetha Parish,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,20109,43.98311688311688,21.773045454545453,11,,port,,,plaza,temple,shanty town
+95,Noraric,,Neutrals,Yotunn,Old Yotunn Faith,2338,-72.16948051948053,8.763954545454538,24,,port,citadel,,,,
+96,Vylfith,Anere Province,Republic of Khun,Yotunn,Old Yotunn Faith,9999,-74.38567207792208,-13.896642857142865,40,,,,,,,
+97,Mapmoor,Knigh Parish,Sletian Theocracy,Dail,Thorbornese Deities,9058,80.1375487012987,-4.313279220779222,40,,,citadel,walls,,temple,shanty town
+98,Lashose,Nitdare Parish,Sletian Theocracy,Dail,Thorbornese Deities,4826,71.33473051948053,-6.329688311688315,430,,,,,,temple,
+99,Duzargaba,Sigka Earldom,Kingdom of Theod,Yotunn,Old Yotunn Faith,2865,-23.230519480519476,-11.601467532467538,83,,port,citadel,,,,
+100,Bjerland,Helsoyra County,Principality of Esetia,Norse,Norse Forefathers,16329,-14.27283116883116,30.25837987012987,59,,,,walls,,,shanty town
+101,Margatharb,Unul Province,Dinylan Theocracy,Yotunn,Uledhorgian Beliefs,7724,5.71470779220779,4.071389610389609,11,,,,,,temple,
+102,Gluthorn,Theod Province,Republic of Khun,Yotunn,Old Yotunn Faith,5443,-66.12644805194806,-3.5435746753246775,11,,,,,,,
+103,Lofosver,Kritnes County,Principality of Esetia,Norse,Norse Forefathers,21012,-30.509415584415592,23.01200649350649,11,,port,,walls,plaza,temple,shanty town
+104,Te'rirden,Ty'at Province,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,29464,40.03392857142859,22.70226623376623,83,,port,citadel,walls,plaza,temple,shanty town
+105,Theodhero,,Neutrals,Yotunn,Old Yotunn Faith,19089,-68.31166558441559,7.757298701298694,11,,,,walls,plaza,,
+106,Thordalder,,Neutrals,Norse,Norse Forefathers,4976,9.724295454545441,38.672474025974026,11,,,citadel,,,,
+107,Betarond,Harquelrandor Province,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,25367,45.598412337662324,27.0757987012987,171,,,citadel,walls,plaza,temple,shanty town
+108,Berake,Gotharb Deanery,Dinylan Theocracy,Yotunn,Yotunnism,4373,-5.296558441558446,-2.1853636363636397,83,,,,walls,,temple,shanty town
+109,Emaralea,,Neutrals,Yoruba,Yoruba Deities,2291,-12.377220779220778,-10.662954545454554,11,,,citadel,,,,
+110,Emberow,,Neutrals,Anor,Anor Shamanism,3929,54.824025974026,37.492363636363635,24,,port,citadel,walls,,,shanty town
+111,Schilaul,Smotland County,Kingdom of Azhor,Dokalfar,Dokalfarism,8210,48.69426623376623,32.5643961038961,109,,,citadel,,,,
+112,Islenor,Neiseta Earldom,Principality of Doramar,Quenian,Quenian Deities,1891,68.99464285714288,-11.141503246753246,332,,,,,,,
+113,Felnora,Orerionle County,Principality of Doramar,Quenian,Quenian Deities,16316,74.9850194805195,-12.781577922077929,83,,,citadel,walls,plaza,,shanty town
+114,Ghoshale,Dimespinia Earldom,Kingdom of Wetsia,Dail,Ghoshalian Heresy,11548,54.15188961038962,-21.630857142857153,40,,,citadel,walls,plaza,,
+115,Rhivorzi,,Neutrals,Rakhnid,Rakhnid Beliefs,2941,-46.22873376623377,-18.415753246753255,109,,port,,,plaza,,
+116,Comben Ona,A'tavhei County,Kingdom of Azhor,Dokalfar,Dokalfarism,1625,43.09571103896104,38.649243506493505,83,,,,,plaza,,
+117,Morbakken,Ostad Department,Republic of Rosenia,Norse,Norse Forefathers,2696,-6.50454545454545,36.950318181818176,40,,port,citadel,,plaza,,
+118,Narbiln,Grimrolwo Province,Dinylan Theocracy,Yotunn,Yotunnism,1689,0.9292207792207705,-6.877928571428569,1077,,port,,walls,plaza,temple,shanty town
+119,Guddam,Guddam Province,Republic of Khun,Yotunn,Old Yotunn Faith,12142,-77.45364935064936,-19.36200974025975,11,,,citadel,walls,plaza,,
+120,Doluthinnoc,Szoberwinlean County,Kingdom of Azhor,Dokalfar,Dokalfarism,4713,35.41260389610389,37.30961688311688,83,,,citadel,walls,,,shanty town
+121,Hovdenda,Skjeria County,Principality of Esetia,Norse,Norse Forefathers,1583,-19.349474025974033,27.01539935064935,109,,,citadel,,,,
+122,Litdasin,,Neutrals,Anor,Anor Shamanism,4357,70.04930844155845,23.87618181818182,24,,,,,plaza,,
+123,Gamuzdiba,Azinkin Province,Republic of Khun,Yotunn,Old Yotunn Faith,4914,-87.73392857142858,-6.955363636363636,24,,port,citadel,,,,
+124,Shotanunar,Shotanunar Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,54640,-43.312529220779226,-1.7950909090909093,332,,,citadel,walls,plaza,temple,shanty town
+125,Shagbawame,Kushadyon Barony,Kingdom of Theod,Yoruba,Yoruba Deities,4392,-16.183928571428567,-9.278415584415583,1496,,port,citadel,,,,
+126,Skaloshin,Harlythaggaust Parish,Venilian Theocracy,Trow,Hlauggian Pantheon,6378,20.397944805194797,29.13092532467532,207,,,citadel,,,temple,
+127,Kinta,,Neutrals,Yotunn,Old Yotunn Faith,6691,-58.83516233766234,14.060512987012977,11,,,citadel,,plaza,,
+128,Yiruzanny,Nuzilara Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,3426,-57.766558441558445,-2.5415649350649403,139,,port,,walls,plaza,,shanty town
+129,Commachalk,Mufront County,Kingdom of Azhor,Dokalfar,Dokalfarism,1511,46.282938311688326,31.367249999999995,207,,,citadel,,,,
+130,Kistal,,Neutrals,Anor,Anor Shamanism,3156,59.97036038961042,30.256831168831166,24,,,citadel,,,,
+131,Skordurdi,Skjeria County,Principality of Esetia,Norse,Norse Forefathers,14204,-21.579603896103905,27.06340909090909,83,,,citadel,walls,plaza,,
+132,Elkun,Goshel Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,2943,-44.52516233766235,8.531649350649353,139,,port,,,,,
+133,Ogenganes,Jans County,Duchy of Vadvia,Norse,Norse Forefathers,1533,-12.161951298701297,19.725662337662335,287,,,citadel,,,,
+134,Lyfalon,Neiseta Earldom,Principality of Doramar,Quenian,Quenian Deities,9310,69.97651948051947,-9.173103896103896,430,,,,walls,,,shanty town
+135,Elkan,Azinkin Province,Republic of Khun,Yotunn,Old Yotunn Faith,3307,-80.32184415584416,-12.083113636363649,11,,,,,,,
+136,Edfocrest,,Neutrals,Anor,Anor Shamanism,1664,67.78046103896105,22.59540584415584,11,,,,,,,
+137,Gobrook,Eagwelia Parish,Sletian Theocracy,Dail,Thorbornese Deities,3978,62.97484090909094,-25.496415584415587,40,,,,,,temple,
+138,Widbay,Fadowia County,Kingdom of Wetsia,Dail,Eatfalow Deities,13628,53.619136363636386,-17.80246753246753,83,,,,walls,plaza,,shanty town
+139,Ellelumenil,Henona County,Principality of Doramar,Quenian,Quenian Deities,6321,69.28115259740258,-17.89229220779221,246,,,citadel,,,,
+140,Jagith,Suncall Barony,Kingdom of Azhor,Dokalfar,Dokalfarism,8475,53.747678571428565,24.92310389610389,24,,,,,,,
+141,Kostingira,Uzine Barony,Kingdom of Theod,Yotunn,Old Yotunn Faith,3500,-32.863441558441565,2.0658214285714323,482,,,citadel,,,,
+142,Memvatho,,Neutrals,Yotunn,Old Yotunn Faith,1675,-47.859516233766236,17.44287662337662,83,,,citadel,,plaza,,
+143,Fynheya,Darkoc Province,Republic of Khun,Yotunn,Old Yotunn Faith,14354,-75.112012987013,-19.4224090909091,40,,port,citadel,walls,plaza,,shanty town
+144,Narang,Anere Province,Republic of Khun,Yotunn,Old Yotunn Faith,1921,-73.02126623376624,-8.504064935064932,83,,,,,,,
+145,Suncall,Suncall Barony,Kingdom of Azhor,Anor,Anor Shamanism,24663,55.5472694805195,26.872918831168832,59,,,citadel,,plaza,temple,
+146,Hidhe,Hidhe Canton,Republic of Khun,Yotunn,Old Yotunn Faith,15006,-70.54334415584417,-3.161045454545466,430,,port,,walls,,,shanty town
+147,Gakinb,Guddam Province,Republic of Khun,Yotunn,Old Yotunn Faith,7479,-76.13725324675326,-16.35288311688312,11,,,,walls,,,shanty town
+148,Springulf,Dister Earldom,Kingdom of Wetsia,Dail,Eatfalow Deities,1469,56.763000000000005,-5.76750974025974,139,,,,,plaza,,
+149,Oavemeare,Oavemeare Earldom,Kingdom of Azhor,Anor,Anor Shamanism,12310,52.397211038961046,36.59876298701298,59,,,citadel,,plaza,,
+150,Harlythaggaust,Harlythaggaust Parish,Venilian Theocracy,Trow,Hlauggian Pantheon,18596,23.648668831168862,26.899246753246754,24,,,,,plaza,temple,
+151,Khatharb,Shotanunar Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,3200,-48.44182792207793,-3.5528668831168844,482,,,,,,,
+152,Theod,Guddam Province,Republic of Khun,Yotunn,Old Yotunn Faith,1742,-78.1010064935065,-15.78760714285714,24,,,,,plaza,,
+153,Szolodra,Rrharran Parish,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,3559,37.009314935064936,28.207899350649352,139,,,,,,temple,
+154,Luron,Boz County,Principality of Durk,Ugluk,Ugluk Beliefs,5124,-65.40939935064937,-9.941259740259738,332,,,,walls,plaza,,shanty town
+155,Oavereach,Smotland County,Kingdom of Azhor,Anor,Anor Shamanism,12872,53.97688636363637,32.200451298701296,83,,,,,plaza,,
+156,Szolaraplit,Harlythaggaust Parish,Venilian Theocracy,Trow,Hlauggian Pantheon,1708,22.117003246753242,25.520902597402593,40,,,citadel,,,temple,
+157,Kudrar,,Neutrals,Drake,Way of Vigkabine,9479,6.100334415584413,-6.586772727272731,1974,,,,,plaza,,
+158,Rurkibigez,Sigka Earldom,Kingdom of Theod,Yotunn,Old Yotunn Faith,10298,-25.96552597402598,-8.651191558441568,59,,,,walls,plaza,,shanty town
+159,Eathillow,Eagrore County,Kingdom of Wetsia,Dail,Eatfalow Deities,7833,51.649188311688306,-5.484097402597413,24,,port,,,,,
+160,Theod,Beratil Province,Republic of Khun,Yotunn,Old Yotunn Faith,4215,-67.837762987013,-12.30148051948052,40,,,,,,,
+161,Beargakew,Fadowia County,Kingdom of Wetsia,Dail,Eatfalow Deities,9960,56.07227922077922,-12.69794805194806,109,,,,,,,
+162,Sungar,Litcairn Parish,Sletian Theocracy,Dail,Thorbornese Deities,5591,66.20233441558443,-17.328564935064946,430,,,,walls,,temple,
+163,Laududalur,Ostad Department,Republic of Rosenia,Norse,Norse Forefathers,6472,-4.568668831168836,39.428240259740264,40,,port,,,,,
+164,Drurilbil,Kushadyon Barony,Kingdom of Theod,Yotunn,Old Yotunn Faith,6294,-18.816720779220788,-5.019487012987014,40,,port,citadel,,plaza,,
+165,Broluch,Anere Province,Republic of Khun,Yotunn,Old Yotunn Faith,2764,-80.68733766233767,-15.08604545454547,11,,port,,,,,
+166,Thonpass,,Neutrals,Anor,Anor Shamanism,1601,63.643879870129865,28.945081168831166,40,,,,,plaza,,
+167,Tulbadab,Goshel Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,1508,-47.295788961038966,7.393353896103896,171,,,citadel,walls,plaza,,shanty town
+168,Sulworil,Nuzilara Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,20920,-50.56509740259741,1.9496688311688288,379,,port,,,,temple,shanty town
+169,Sgand,Azinkin Province,Republic of Khun,Yotunn,Old Yotunn Faith,5382,-78.96827922077924,-2.9364837662337706,287,,,citadel,,,,
+170,Noren,Azinkin Province,Republic of Khun,Yotunn,Old Yotunn Faith,6366,-74.02792207792209,-2.6189999999999998,246,,port,citadel,,,,
+171,Enorhorelu,Neiseta Earldom,Principality of Doramar,Quenian,Quenian Deities,1655,65.22045779220781,-13.941555194805204,430,,,citadel,,,,
+172,Donalenead,Mufront County,Kingdom of Azhor,Dokalfar,Dokalfarism,1588,45.56279220779223,35.00669805194805,139,,,,,,,
+173,Menestova,Bjervik County,Principality of Esetia,Norse,Norse Forefathers,14113,-23.338928571428582,29.624961038961033,11,,,citadel,walls,,,shanty town
+174,Curdehall,Whidia Parish,Sletwelian Theocracy,Gozdor,Gozdor Religion,21683,-18.218922077922073,21.33786038961039,109,,,,walls,plaza,temple,shanty town
+175,Brilkun,Sigka Earldom,Kingdom of Theod,Yotunn,Old Yotunn Faith,3974,-32.17272077922078,-5.254889610389604,171,,,citadel,,,,
+176,Shadow,Eagrore County,Kingdom of Wetsia,Dail,Eatfalow Deities,7947,52.318227272727285,-8.26556493506493,171,,,,,,,
+177,Motrand,Sungulf County,Kingdom of Wetsia,Dail,Eatfalow Deities,1787,46.64998051948055,-17.221704545454557,11,,,,,,,
+178,Mufront,Mufront County,Kingdom of Azhor,Anor,Anor Shamanism,12340,50.699834415584405,37.95697402597402,59,,,citadel,walls,plaza,,shanty town
+179,Khugautheas,Tyvahethath Province,Venilian Theocracy,Trow,Khugautheasian Society,11378,11.708181818181814,23.894766233766234,24,,,citadel,,plaza,temple,
+180,Aetalhazmacoba,Unul Province,Dinylan Theocracy,Drake,Way of Vigkabine,1570,8.762551948051964,-5.642064935064937,2077,,,,,,temple,
+181,Chedly Fanera,Suncall Barony,Kingdom of Azhor,Dokalfar,Dokalfarism,11090,51.13192207792207,24.443006493506495,24,,,,walls,,,shanty town
+182,Losviknes,Dondenes County,Duchy of Vadvia,Norse,Norse Forefathers,13917,-14.607350649350664,22.53345779220779,171,,,citadel,,,,
+183,Dadgach,Vorbold Territory,Butharian Empire,Yotunn,Old Yotunn Faith,8453,-37.36706493506493,-15.643577922077938,40,,,,,,,
+184,Newmeforest,,Neutrals,Anor,Anor Shamanism,10713,68.15834415584413,29.95018831168831,24,,,citadel,walls,plaza,,shanty town
+185,Thorvautle,Thorvautle Land,Sletian Theocracy,Dail,Thorbornese Deities,2320,63.7724220779221,-1.474509740259748,24,,,,,,temple,
+186,Jasbotn,,Neutrals,Norse,Norse Forefathers,18209,13.348256493506511,37.76958116883117,59,,,citadel,,plaza,,
+187,Batalka,Dizen Parish,Dinylan Theocracy,Yotunn,Uledhorgian Beliefs,2395,10.221428571428575,2.80145454545454,11,,port,,walls,,temple,
+188,Smooglen,,Neutrals,Dail,Eatfalow Deities,8618,55.9530292207792,2.149451298701294,83,,,,walls,,,shanty town
+189,Lluthath,Tyrybraajha County,Kingdom of Azhor,Dokalfar,Dokalfarism,1576,41.3410324675325,33.65313311688311,139,,,,,,,
+190,Dobehlin,Ulrenhetha Parish,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,18189,47.30508116883118,24.38725324675324,59,,,citadel,walls,plaza,temple,
+191,Natirara,Unul Province,Dinylan Theocracy,Yotunn,Uledhorgian Beliefs,9210,9.66234740259739,-2.272090909090913,538,,,citadel,walls,,temple,shanty town
+192,Murre,,Neutrals,Ugluk,Ugluk Beliefs,8574,-58.818126623376635,-9.123545454545464,4308,,,citadel,walls,,,
+193,Weglen,Smotland County,Kingdom of Azhor,Anor,Anor Shamanism,9584,57.13778571428574,32.57059090909091,40,,,citadel,,,,
+194,Sibrook,Cloudhol Parish,Sletwelian Theocracy,Gozdor,Gozdor Religion,9158,-28.92819155844157,19.076756493506494,109,,,,,,temple,
+195,Rovewell,Rovewell County,Kingdom of Wetsia,Dail,Eatfalow Deities,32599,44.91233766233768,-9.975331168831175,11,,port,,walls,plaza,,shanty town
+196,Braugarbak,Faldalia Province,Republic of Rosenia,Norse,Norse Forefathers,9270,-10.442892857142851,30.876311688311684,59,,,citadel,,,,
+197,Agabaric,Azinkin Province,Republic of Khun,Yotunn,Old Yotunn Faith,1057,-80.86079220779222,-8.99964935064935,40,,,citadel,,,,
+198,Smoothand,Dister Earldom,Kingdom of Wetsia,Dail,Eatfalow Deities,962,55.92979870129872,-10.089935064935077,246,,,,,,,
+199,Bestilent,,Neutrals,Anor,Anor Shamanism,1695,67.6008116883117,18.923435064935063,24,,,citadel,,plaza,,
+200,Dizarnara,Azinkin Province,Republic of Khun,Yotunn,Old Yotunn Faith,10885,-78.9202694805195,-6.289422077922076,171,,,,walls,,,shanty town
+201,Obreach,Dimespinia Earldom,Kingdom of Wetsia,Dail,Eatfalow Deities,2877,52.3476525974026,-20.605616883116895,59,,,,,,,
+202,Deebrook,Mutumnia Parish,Sletian Theocracy,Dail,Thorbornese Deities,1639,66.36339935064936,-24.47117532467533,59,,,,,,temple,
+203,Shrourypost,Mutumnia Parish,Sletian Theocracy,Dail,Thorbornese Deities,1742,61.69871103896105,-14.605948051948047,430,,,citadel,walls,,temple,shanty town
+204,Jonbulukk,Jonbulukk County,Butharian Empire,Yotunn,Old Yotunn Faith,12762,-37.091396103896116,7.292688311688309,171,,port,citadel,walls,plaza,,shanty town
+205,Neiseta,Neiseta Earldom,Principality of Doramar,Quenian,Quenian Deities,25082,67.00456168831172,-11.802798701298713,430,,,,walls,plaza,temple,shanty town
+206,Lureykir,Helsoyra County,Principality of Esetia,Norse,Norse Forefathers,10802,-12.17743831168832,34.616425324675326,11,,,citadel,walls,,,shanty town
+207,Cavefals,,Neutrals,Dail,Eatfalow Deities,13060,61.53609740259742,1.8892694805194807,83,,,citadel,walls,plaza,,shanty town
+208,Kiledhor,Kiledhor County,Butharian Empire,Yotunn,Old Yotunn Faith,13883,-37.62105194805196,-2.969006493506491,246,,,citadel,walls,plaza,,shanty town
+209,Eagburypost,Knigh Parish,Sletian Theocracy,Dail,Thorbornese Deities,7882,73.0491428571429,-4.540938311688322,109,,,citadel,,,temple,
+210,Sungulf,Sungulf County,Kingdom of Wetsia,Dail,Eatfalow Deities,19496,47.71548701298704,-15.333837662337672,40,,,citadel,walls,,,shanty town
+211,Vhathachag,,Neutrals,Dokalfar,Old Dokalfar Beliefs,2448,51.70339285714286,17.25858116883117,83,,,citadel,,,,
+212,Nunarwar,Iole Land,Dinylan Theocracy,Yotunn,Nunarwarian Heresy,1536,-9.313889610389609,-4.375227272727265,2289,,,,,plaza,temple,
+213,Throthozu,Shotanunar Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,1081,-50.03079545454546,-8.648094155844163,1077,,,citadel,walls,,,shanty town
+214,Helsoyra,Helsoyra County,Principality of Esetia,Norse,Norse Forefathers,16921,-16.43017207792208,35.16466558441559,40,,,citadel,walls,plaza,,shanty town
+215,Sleettire,,Neutrals,Anor,Anor Shamanism,2618,70.38847402597403,20.921259740259742,11,,port,citadel,walls,,,shanty town
+216,Zhir,,Neutrals,Rakhnid,Rakhnid Beliefs,2887,-47.94779220779221,-12.809454545454543,24,,,citadel,walls,,,shanty town
+217,Elsasun,Dondenes County,Duchy of Vadvia,Norse,Norse Forefathers,2390,-14.545402597402585,18.977639610389602,207,,,citadel,,,,
+218,Ararbold,Goshel Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,2320,-41.505194805194805,8.531649350649353,207,,port,,,,,
+219,Cagoon,Litcairn Parish,Sletian Theocracy,Dail,Thorbornese Deities,1651,71.16747077922076,-24.124266233766235,59,,,citadel,walls,plaza,temple,
+220,Ginarg,Bazanero Province,Republic of Nurnan,Yotunn,Way of Vigkabine,6783,15.257805194805186,-4.7174902597402735,721,,,citadel,,,,
+221,Lavenpaspi,Thorvautle Land,Sletian Theocracy,Dail,Thorbornese Deities,980,65.51471103896105,-7.356477272727261,787,,,citadel,,,temple,
+222,Turilkun,Mer Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,11850,-44.02493181818182,-6.560444805194805,287,,,,walls,plaza,,shanty town
+223,Misha,Nitdare Parish,Sletian Theocracy,Dail,Thorbornese Deities,1435,74.82085714285714,-8.219103896103903,171,,,citadel,,,temple,
+224,Shahourg,Widzig Province,Republic of Sholabu,Yotunn,Way of Vigkabine,9590,17.329967532467535,2.274896103896097,59,,,citadel,,,,
+225,Hauslika,,Neutrals,Norse,Norse Forefathers,12572,-51.328607142857145,24.83947402597402,11,,,,walls,plaza,,
+226,Kruda Ho,Kritnes County,Principality of Esetia,Norse,Norse Forefathers,1815,-23.874779220779217,22.846295454545455,59,,,citadel,,,,
+227,Babetheta,Te'ruhn County,Kingdom of Azhor,Dokalfar,Dokalfarism,2672,34.06678246753248,34.46310389610389,59,,,citadel,,,,
+228,Shagbetar,Kushadyon Barony,Kingdom of Theod,Yoruba,Yoruba Deities,600,-16.671769480519472,-12.016519480519491,379,,,,walls,,,shanty town
+229,Fardemea,Whidia Parish,Sletwelian Theocracy,Gozdor,Gozdor Religion,9975,-21.359688311688302,19.693139610389608,83,,,citadel,,,temple,
+230,Velde,,Neutrals,Yotunn,Old Yotunn Faith,11411,-66.97978246753247,10.912003246753244,24,,,,walls,plaza,,shanty town
+231,Brilfald,Azinkin Province,Republic of Khun,Yotunn,Old Yotunn Faith,3478,-76.55850000000001,-5.284314935064934,139,,,citadel,,,,
+232,Anband,Thorvautle Land,Sletian Theocracy,Dail,Thorbornese Deities,1450,65.0888181818182,-4.212613636363642,287,,,,,,temple,
+233,Ghrodrasa,Mufront County,Kingdom of Azhor,Dokalfar,Dokalfarism,1565,48.03297077922079,34.947847402597404,139,,,citadel,,,,
+234,Nauthi,Rrharran Parish,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,8678,32.75503246753246,25.48992857142857,59,,port,,walls,,temple,shanty town
+235,Undustin,Hidhe Canton,Republic of Khun,Yotunn,Old Yotunn Faith,2087,-67.32049675324676,-6.82527272727274,596,,,,,,,
+236,Ushund,Guhal Governorate,Republic of Nurnan,Yotunn,Yotunnism,4580,4.72973376623375,-11.039288961038977,24,,,,,,,
+237,Besaquen,Harquelrandor Province,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,19091,40.329730519480506,31.913941558441554,139,,,,walls,,temple,shanty town
+238,Norgumun,Goshel Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,14430,-43.708996753246765,4.971185064935064,246,,,,walls,plaza,,
+239,Gurakzar,Shotanunar Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,1803,-48.02677597402598,-7.876840909090902,927,,,citadel,,,,
+240,Vasdagil,,Neutrals,Norse,Norse Forefathers,3487,7.127123376623388,40.93048051948052,11,,,citadel,,,,
+241,Te'ruhn,Te'ruhn County,Kingdom of Azhor,Dokalfar,Dokalfarism,7640,33.81899025974025,36.11401948051948,24,,,,,,,
+242,Duchill,,Neutrals,Anor,Anor Shamanism,21627,63.12506493506493,26.37268831168831,83,,,citadel,walls,plaza,temple,shanty town
+243,Vocinez,Vigbeorn Department,Republic of Khun,Yotunn,Old Yotunn Faith,8412,-81.15194805194807,0.24609740259740676,139,,port,citadel,,,,
+244,Pureswind,Freyster Parish,Sletian Theocracy,Dail,Thorbornese Deities,3329,53.228863636363656,-23.55744155844158,24,,,,,,temple,
+245,Moshell,,Neutrals,Anor,Anor Shamanism,8345,62.722402597402606,32.9236948051948,11,,port,citadel,,,,
+246,Timerwich,Whidia Parish,Sletwelian Theocracy,Gozdor,Gozdor Religion,1673,-19.369607142857163,19.71791883116883,109,,,citadel,,,temple,
+247,Toren,,Neutrals,Yotunn,Old Yotunn Faith,2248,-56.29219480519482,13.118902597402595,40,,,,,,,
+248,Froth,Nuzilara Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,5906,-52.442123376623385,-5.352457792207794,596,,,,,,,
+249,Commacrintyr,Harquelrandor Province,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,8358,43.06009090909092,26.804775974025972,109,,,citadel,,,temple,
+250,Digez,Theod Province,Republic of Khun,Yotunn,Old Yotunn Faith,5615,-66.6499090909091,1.9326331168831103,24,,,,,,,
+251,Kosharb,Zugbeorn Barony,Kingdom of Theod,Yotunn,Old Yotunn Faith,3529,-32.40967207792208,-1.7439837662337752,332,,,citadel,,,,
+252,Mondige,Anere Province,Republic of Khun,Yotunn,Old Yotunn Faith,1063,-76.25960064935066,-10.791496753246747,83,,,,,,,
+253,Afselulalle,Neiseta Earldom,Principality of Doramar,Quenian,Quenian Deities,7198,71.09623051948051,-14.808827922077924,246,,,citadel,,,,
+254,Nulkun,Fyndus Province,Republic of Khun,Yotunn,Old Yotunn Faith,14291,-82.2763051948052,-16.93364610389611,11,,,citadel,,plaza,,
+255,Zugbeorn,Zugbeorn Barony,Kingdom of Theod,Yotunn,Old Yotunn Faith,6423,-28.48681168831169,-0.6722824675324759,207,,,citadel,,,,
+256,Bornoyri,Ostad Department,Republic of Rosenia,Norse,Norse Forefathers,1669,-3.7013961038961014,37.22908441558442,40,,,citadel,,plaza,,
+257,Oadeforest,Oadeforest Parish,Sletian Theocracy,Dail,Thorbornese Deities,8361,79.52581168831168,-2.076954545454541,11,,port,citadel,,,temple,
+258,Theod,Azinkin Province,Republic of Khun,Yotunn,Old Yotunn Faith,6876,-82.58914285714286,-2.8915714285714387,83,,,,,,,
+259,Stilderde,Dister Earldom,Kingdom of Wetsia,Dail,Eatfalow Deities,5741,57.15482142857144,-7.924850649350645,207,,,,,,,
+260,Khatharb,Goshel Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,2456,-41.11492207792209,3.221152597402593,482,,,citadel,walls,,,shanty town
+261,Goccoz,Dre Land,Principality of Durk,Ugluk,Ugluk Beliefs,1532,-62.53810714285715,-7.401389610389614,1321,,,,walls,,,shanty town
+262,Dadguth,Mer Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,9576,-34.2262987012987,-10.904551948051946,11,,port,,,,,
+263,Badebore,Mutumnia Parish,Sletian Theocracy,Dail,Thorbornese Deities,1828,66.52291558441559,-26.933610389610394,11,,,,walls,,temple,shanty town
+264,Scochill,Mufront County,Kingdom of Azhor,Anor,Anor Shamanism,766,45.64022727272729,42.61856493506494,24,,,citadel,,,,
+265,Gumun,Nuzilara Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,9259,-54.19989935064936,-3.2353831168831206,287,,,citadel,,,,
+266,Eagrore,Eagrore County,Kingdom of Wetsia,Dail,Eatfalow Deities,13026,48.31948051948052,-5.484097402597413,11,,port,citadel,,plaza,,
+267,Kenherad,Mer Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,1289,-43.00433766233767,-8.614022727272726,207,,,,walls,plaza,,shanty town
+268,Yinez,Uzine Barony,Kingdom of Theod,Yotunn,Old Yotunn Faith,1555,-26.676379870129878,4.466308441558446,83,,,citadel,,,,
+269,Zabad,Unul Province,Dinylan Theocracy,Durinn,Way of Vigkabine,8409,13.139181818181825,-3.868801948051953,2624,,,citadel,,plaza,temple,
+270,Blakwich,Fadowia County,Kingdom of Wetsia,Dail,Eatfalow Deities,1778,53.69812012987012,-15.614152597402608,139,,,,,,,
+271,Litcairn,Litcairn Parish,Sletian Theocracy,Dail,Thorbornese Deities,12878,69.75970129870132,-20.048084415584412,83,,,citadel,walls,plaza,temple,shanty town
+272,Szihletheas,Harquelrandor Province,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,5991,43.04305519480519,30.112801948051946,171,,,,,plaza,temple,
+273,Vodigland,Kritnes County,Principality of Esetia,Norse,Norse Forefathers,8032,-26.60823701298702,23.24431168831169,24,,,,,,,
+274,Grimsund,Dondenes County,Duchy of Vadvia,Norse,Norse Forefathers,1621,-13.20732467532467,20.86240909090909,171,,,citadel,,,,
+275,Iorilkun,Sigka Earldom,Kingdom of Theod,Yotunn,Old Yotunn Faith,4900,-21.49597402597402,-5.638967532467532,59,,,citadel,,,,
+276,Laurey,,Neutrals,Norse,Norse Forefathers,3379,11.802652597402613,43.213266233766234,11,,,,,,,
+277,Grilararak,Vigbeorn Department,Republic of Khun,Yotunn,Old Yotunn Faith,15402,-78.11649350649351,0.029279220779216075,207,,,,walls,plaza,,
+278,Ushelkeg,Kiledhor County,Butharian Empire,Yotunn,Old Yotunn Faith,1647,-35.911285714285725,-0.8674188311688269,482,,,citadel,,plaza,,
+279,Shariondosha,Tyrybraajha County,Kingdom of Azhor,Dokalfar,Dokalfarism,1735,42.44370779220779,32.12456493506493,171,,,,walls,,,
+280,Podford,Nitdare Parish,Sletian Theocracy,Dail,Thorbornese Deities,1878,73.05224025974027,-6.151587662337668,287,,,citadel,,,temple,
+281,Gagfast,Dizen Parish,Dinylan Theocracy,Yotunn,Uledhorgian Beliefs,16329,11.073214285714286,3.0337597402597325,24,,port,,walls,,temple,shanty town
+282,Clearow,Whidia Parish,Sletwelian Theocracy,Gozdor,Gozdor Religion,8992,-17.000094155844153,18.91569155844156,171,,,citadel,,,temple,
+283,Malerad,Anere Province,Republic of Khun,Yotunn,Old Yotunn Faith,8844,-69.66677922077923,-8.411142857142863,139,,,citadel,,plaza,,
+284,Kvigelah,Skjeria County,Principality of Esetia,Norse,Norse Forefathers,3114,-20.768084415584426,30.647103896103896,24,,,citadel,,,,
+285,Rairehsa,Orerionle County,Principality of Doramar,Quenian,Quenian Deities,12777,77.66737012987014,-10.594811688311694,40,,port,citadel,walls,plaza,,shanty town
+286,Litmouth,Freyster Parish,Sletian Theocracy,Dail,Thorbornese Deities,3644,51.323961038961045,-24.84286363636363,24,,,,,,temple,
+287,Shanathilau,Tyrybraajha County,Kingdom of Azhor,Dokalfar,Dokalfarism,7420,38.829038961038975,35.55184090909091,83,,,,walls,,,shanty town
+288,Latrand,Kritnes County,Principality of Esetia,Norse,Norse Forefathers,6080,-28.83217207792208,20.17013961038961,40,,,,,,,
+289,Osturvatn,Skjeria County,Principality of Esetia,Norse,Norse Forefathers,6887,-19.99992857142857,24.90761688311688,109,,,,,,,
+290,Kenbulukk,Azinkin Province,Republic of Khun,Yotunn,Old Yotunn Faith,2312,-85.22193506493508,-2.171425324675326,11,,,,,,,
+291,Orane,Grimrolwo Province,Dinylan Theocracy,Yotunn,Yotunnism,19840,4.275964285714281,-8.084366883116886,657,,,citadel,walls,plaza,temple,shanty town
+292,T'lindeier,Mufront County,Kingdom of Azhor,Dokalfar,Dokalfarism,11854,47.399551948051936,39.60014610389611,83,,,citadel,,,,
+293,Flatedake,,Neutrals,Anor,Anor Shamanism,9696,70.53869805194805,26.747474025974025,11,,,,walls,,,
+294,Mushield,Whiwbia Parish,Sletwelian Theocracy,Gozdor,Gozdor Religion,14172,-20.800607142857146,21.677025974025973,83,,,,walls,,temple,shanty town
+295,Nargun,,Neutrals,Yotunn,Old Yotunn Faith,5109,-50.924396103896115,16.90702597402597,139,,,citadel,,,,
+296,Nurgathiz,Kushadyon Barony,Kingdom of Theod,Yotunn,Old Yotunn Faith,884,-18.4822012987013,-14.82896103896104,11,,,citadel,,,,
+297,Smootcairn,Cloudhol Parish,Sletwelian Theocracy,Gozdor,Gozdor Religion,12336,-25.56596103896105,17.857928571428566,83,,,citadel,,,temple,
+298,Sgand,Azinkin Province,Republic of Khun,Yotunn,Old Yotunn Faith,1173,-86.0923051948052,-4.880103896103904,24,,,citadel,,,,
+299,Emergagon,Knigh Parish,Sletian Theocracy,Dail,Thorbornese Deities,4472,67.98798701298702,-3.9353961038961103,246,,port,,walls,,temple,shanty town
+300,Be-Ninerale,Szoberwinlean County,Kingdom of Azhor,Dokalfar,Dokalfarism,5437,33.188668831168826,40.60525324675324,24,,,,,plaza,,
+301,Hnisvog,,Neutrals,Norse,Norse Forefathers,10913,13.857779220779221,35.793438311688305,24,,,citadel,walls,plaza,,shanty town
+302,Shathar,Azinkin Province,Republic of Khun,Yotunn,Old Yotunn Faith,3693,-77.71537987012988,-6.3513701298701335,109,,,,,,,
+303,Kliavoshi,Kliavoshi County,Principality of Durk,Rakhnid,Rakhnid Beliefs,30971,-55.16474025974026,-10.362506493506501,1776,,,,walls,plaza,,shanty town
+304,Sungulf,Mutumnia Parish,Sletian Theocracy,Dail,Thorbornese Deities,8704,63.59432142857145,-19.46112662337663,207,,,,walls,,temple,shanty town
+305,Ghohtown,,Neutrals,Anor,Anor Shamanism,8532,48.1646103896104,44.229214285714285,40,,port,,walls,,,shanty town
+306,Hvostad,Skjeria County,Principality of Esetia,Norse,Norse Forefathers,15635,-22.68847402597403,30.368337662337662,24,,port,,walls,plaza,,shanty town
+307,Rrharran,Rrharran Parish,Eshauldarcan Theocracy,Dokalfar,Dokalfarism,24020,36.007305194805184,21.153564935064935,59,,port,citadel,walls,,temple,
+308,Shathugbi,Nuzilara Margrave,Butharian Empire,Yotunn,Old Yotunn Faith,12018,-53.81891883116884,0.7664610389610331,287,,,,walls,,,shanty town
+309,Honestal,Eagrore County,Kingdom of Wetsia,Dail,Eatfalow Deities,1026,50.21199350649351,-8.246980519480516,171,,,,,,,

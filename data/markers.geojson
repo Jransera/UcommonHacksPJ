@@ -1,0 +1,106 @@
+{ "type": "FeatureCollection", "features": [
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [-41.62754220779222, -15.93937987012987] },
+   "properties": {
+      "id": "markerElement1",
+      "type": "hot_springs"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [6.100334415584413, -6.586772727272731] },
+   "properties": {
+      "id": "markerElement2",
+      "type": "mine"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [8.762551948051964, -5.642064935064937] },
+   "properties": {
+      "id": "markerElement3",
+      "type": "mine"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [8.324269480519476, 0.0912272727272736] },
+   "properties": {
+      "id": "markerElement4",
+      "type": "bridge"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [39.13568181818184, 41.069863636363635] },
+   "properties": {
+      "id": "markerElement5",
+      "type": "bridge"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [-69.90837662337663, -14.632275974025973] },
+   "properties": {
+      "id": "markerElement6",
+      "type": "bridge"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [-9.574071428571429, -6.371503246753257] },
+   "properties": {
+      "id": "markerElement7",
+      "type": "inn"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [53.12045454545455, 41.82872727272727] },
+   "properties": {
+      "id": "markerElement8",
+      "type": "lighthouse"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [16.72597402597401, 18.75307792207792] },
+   "properties": {
+      "id": "markerElement9",
+      "type": "lighthouse"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [8.517857142857153, 5.124506493506495] },
+   "properties": {
+      "id": "markerElement10",
+      "type": "lighthouse"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [16.72597402597401, -10.362506493506501] },
+   "properties": {
+      "id": "markerElement11",
+      "type": "lighthouse"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [-40.1841525974026, 1.5020941558441478] },
+   "properties": {
+      "id": "markerElement12",
+      "type": "battlefield"
+   }
+},
+{
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [27.274178571428592, -2.1993019480519536] },
+   "properties": {
+      "id": "markerElement13",
+      "type": "battlefield"
+   }
+}
+]}

@@ -1,0 +1,19 @@
+{
+  "name": "uncommon-dnd",
+  "version": "1.0.0",
+  "description": "Space for a building our Uncommon Hacks project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jransera/UcommonHacksPJ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jransera/UcommonHacksPJ/issues"
+  },
+  "homepage": "https://github.com/Jransera/UcommonHacksPJ#readme"
+}
