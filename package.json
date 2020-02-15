@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Jransera/UcommonHacksPJ#readme",
   "dependencies": {
     "csv-parser": "^2.3.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "victor": "^1.1.0"
   }
 }
