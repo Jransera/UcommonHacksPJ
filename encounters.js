@@ -16,7 +16,8 @@ module.exports= [
         },
 
         choice2: {
-            choice: `say Not a fan of visitors are you?`
+            choice: `say Not a fan of visitors are you?`,
+            next: "e1Event2"
         }
     },
 
@@ -880,11 +881,26 @@ module.exports= [
         openingText: `You turn around and walk out of the town, as you start to move further from the center of town, the city starts
         make noise again. A couple of children watch you as you leave the town. One runs up to you and hands you a small map. "here sir 
         my mom said to hand this to you. It seems to be a map towards a neaby town...`,
-    }},
-
-
+    }
+    },
 
 //ENCOUNTER 2?
+    {encounter2:{
+        openingText:`You step out of the local pub in {{cityName}}. The night sky is filled with stars, you look up with drunken awe.
+        you wonder if perhaps the sky was the work of the old gods or perhaps it was the new gods. You wait for a minute pondering before 
+        the cold air finally wakes your slumbering mind. The pavement creaks as you `,
+
+        choice1:{
+            choice: ``,
+            next: ``,
+        },
+        choice2:{
+            choice:``,
+            next:``,
+        }
+    }}
+
+
 
 
 ];

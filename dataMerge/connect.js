@@ -1,7 +1,7 @@
 const parser = require('../parser/parse');
 
 
-const burg_object = (burg, burgs, routes) => {
+const burgObject = (burg, burgs, routes) => {
     let obj =  {
         name: burg.Burg,
         pop: burg.Population,
@@ -13,8 +13,6 @@ const burg_object = (burg, burgs, routes) => {
         temple: burg.Temple,
         st: burg['Shanty Town'],
         neighbors: []
-        //prev: index !== 0 ? burg_object(rte.burgs[index - 1], rte, burgs) : undefined,
-        //next: index !== rte.burgs.length ? burg_object(rte.burgs[index + 1], rte,  burgs) : undefined
     };
 
     routes.features.forEach(route => {
@@ -25,6 +23,7 @@ const burg_object = (burg, burgs, routes) => {
                     return;
                 }
 
+                route.burgs[index] = null;
                 if (index !== 0 && route.burgs[index - 1] !== null) {
                     let prev = undefined;
                     burgs.forEach(brg => {
@@ -32,9 +31,8 @@ const burg_object = (burg, burgs, routes) => {
                             prev = brg;
                         }
                     });
-                    route.burgs[index] = null;
                     if (prev !== undefined) {
-                        obj.neighbors.push(burg_object(prev, burgs, routes));
+                        obj.neighbors.push(burgObject(prev, burgs, routes));
                     }
                 }
                 if (index !== (route.burgs.length - 1) && route.burgs[index + 1] !== null) {
@@ -45,7 +43,7 @@ const burg_object = (burg, burgs, routes) => {
                         }
                     });
                     if (next !== undefined) {
-                        obj.neighbors.push(burg_object(next, burgs, routes));
+                        obj.neighbors.push(burgObject(next, burgs, routes));
                     }
                 }
             }
@@ -55,37 +53,37 @@ const burg_object = (burg, burgs, routes) => {
     return obj;
 };
 
-const create_tree = async () => {
+const createTree = async () => {
     const burgs = await parser.burgs().then();
     const routes = await parser.routes().then();
     const sets = [];
     while (burgs != null && burgs.length !== 0) {
         let burg = burgs[0];
-        let obj = burg_object(burg, burgs, routes);
+        let obj = burgObject(burg, burgs, routes);
         obj.init = function () {
             this.neighbors.forEach(neighbor => {
                 neighbor.init = this.init;
                 neighbor.init();
                 neighbor.parent = this;
             });
-            /*for (let i in this) {
-                if (typeof this[i] == 'object') {
-                    if (this[i] != null || this[i] !== undefined) {
-                        for (let j in this[i]) {
-                            this[j].init = this.init;
-                            this[j].init();
-                            this[j].parent = this;
-                        }
-                    }
-                }
-            }*/
             return this;
         };
         obj.init();
+        obj.allNeighbors = function () {
+            this.neighbors.forEach(neighbor => {
+                neighbor.allNeighbors = this.allNeighbors;
+                neighbor.allNeighbors();
+                if (this.parent) {
+                    this.neighbors.push(this.parent);
+                }
+            });
+            return this;
+        };
+        obj.allNeighbors();
         sets.push(obj);
         burgs.splice(0, 1);
     }
     return sets;
 };
 
-exports.tree = create_tree;
+exports.tree = createTree;
