@@ -20,35 +20,39 @@ const bucket = admin.storage().bucket();
 
 const app = dialogflow({ debug: true });
 
-const doEncounter = (conv, isStart) => {
+let data = {};
+
+const doEncounter = async (conv, isStart) => {
     // conv.ask(`Your last response was: ${conv.data.lastResponse}`);
     if (isStart) {
         let trees = data.trees;
-        let data = merge.getStart(trees);
-        conv.data.fullData = data;
-        let txt = data.text + " . Your options are: ";
-        data.choices.forEach((choice, index) => {
-            txt += " " + (index + 1) + ". " + choice + ". ";
-        });
+        let d = await merge.getStart(trees);
+        conv.data.fullData = d;
+        let txt = d.text + " . Your options are: ";
+        if (d.choices.length) {
+            d.choices.forEach((choice, index) => {
+                txt += " " + (index + 1) + ". " + choice.choice + ". ";
+            });
+        }
         conv.ask(txt);
     }
     else {
         let num = conv.data.response - 1;
         let fullData = conv.data.fullData;
-        let data = merge.makeChoice(fullData.enNum, fullData.event, fullData.choices[num], fullData.city);
-        conv.data.fullData = data;
-        let txt = data.text + " . Your options are: ";
-        data.choices.forEach((choice, index) => {
-            txt += " " + (index + 1) + ". " + choice + ". ";
-        });
+        let d = await merge.makeChoice(fullData.enNum, fullData.event, fullData.choices[num], fullData.city, data.trees);
+        conv.data.fullData = d;
+        let txt = d.text + " . Your options are: ";
+        if (d.choices.length) {
+            d.choices.forEach((choice, index) => {
+                txt += " " + (index + 1) + ". " + choice.choice + ". ";
+            });
+        }
         conv.ask(txt);
     }
 
     // conv.ask(`This is encounter ${conv.data.pos}. You can do 1, 2, or 3. What do you do?`);
     conv.data.pos++;
 };
-
-let data = {};
 
 const doProcessing = async (conv) => {
     data.trees = await connect.tree(conv.data.csvFilename, conv.data.jsonFilename);
@@ -80,33 +84,33 @@ app.intent('dnd_entry', async (conv, { gameId }) => {
     }
 });
 
-app.intent('dnd_ready', (conv, {}) => {
+app.intent('dnd_ready', async (conv, {}) => {
     try {
         if (data.trees) {
-            doEncounter(conv, true);
+            await doEncounter(conv, true);
         }
         else {
             conv.ask("The game is still loading. Say ready when you are ready");
         }
     }
     catch (e) {
-        console.log(e);
+        console.error(e);
         conv.close('Something was wrong with your uploaded files. Please reupload them.');
     }
 });
 
-app.intent('dnd_encounter', (conv, { num }) => {
+app.intent('dnd_encounter', async (conv, { num }) => {
     try {
         if (num >= 1 && num <= 3) {
             conv.data.response = num;
-            doEncounter(conv, false);
+            await doEncounter(conv, false);
         }
         else {
             conv.ask("You must say option 1, option 2, or option 3");
         }
     }
     catch (e) {
-        console.log(e);
+        console.error(e);
         conv.close('Something was wrong with your uploaded files. Please reupload them.');
     }
 });
