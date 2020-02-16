@@ -976,6 +976,9 @@ module.exports= [
         you. A younger man with blonde hair removes his hood and with a smile says "hello there my friend you seem lost, how about we make sure you get 
         home safe... hmmm how about 40 gold to get you home safe.`,
 
+        default:
+        `You step out of pub`,
+
         choice1:{
             choice: `Say "piss off"`,
             next: `e2e1Event1`,
