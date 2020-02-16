@@ -3,21 +3,25 @@ const functions = require('firebase-functions');
 
 const app = dialogflow({ debug: true });
 
-app.intent('my_intent', (conv, { below }) => {
-    if (below == 1) {
-        conv.close();
-    }
-    else if (below == 2) {
-        conv.followup('example-event-2', {});
-    }
+const doEncounter = (conv) => {
+    conv.ask(`Your last response was: ${conv.data.lastResponse}`);
+    conv.ask(`This is encounter ${conv.data.pos}. You can do 1, 2, or 3. What do you do?`);
+    conv.data.pos++;
+};
+
+app.intent('dnd_entry', (conv, {}) => {
+    conv.data.pos = 0;
+    conv.data.lastResponse = 0;
+    doEncounter(conv);
 });
 
-app.intent('my_intent_2', (conv, { quit }) => {
-    if (quit == 1) {
-        conv.close();
+app.intent('dnd_encounter', (conv, { num }) => {
+    if (num >= 1 && num <= 3) {
+        doEncounter(conv);
+        conv.data.lastResponse = num;
     }
-    else if (quit == 2) {
-        conv.followup('example-event-1', {});
+    else {
+        conv.ask("You must say option 1, option 2, or option 3");
     }
 });
 
