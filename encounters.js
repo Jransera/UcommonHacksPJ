@@ -1,3 +1,4 @@
+
 const combatRoll = () => {
     let roll= Math.floor(Math.random()*20) +1;
 
@@ -57,7 +58,7 @@ const alleyCombat =(roll) =>{
         have a clue to the god given power you have...`;
        
     }
-}
+};
 
 
 
@@ -68,11 +69,29 @@ module.exports= [
         
         //starting of encounter
         openingText: 
-        `As you walk into the center of {{cityName}} the air is damp and the smell of animals lingers on your nose. 
+        `the air is damp and the smell of animals lingers on your nose. 
         the noise that you heard as you walked in has now been silenced. People stare at you as you walk by them, The children that
         were once running around playing are now hiding behind the adults. A young man stands up off of the bench he was sitting on 
-        and walks to you. "Ahoy there" he calls out.`,         
-        
+        and walks to you. "Ahoy there" he calls out.`,
+
+        default:
+        `As you enter the city of {{cityName}} `,
+
+        capital:
+        `As you enter the capital city of {{cityName}} you notice `,
+
+         walls:
+         `As you walk under the main gate in the walls of {{cityName}} `,
+
+        plaza:
+        `As you enter the central plaza of {{cityName}} the smell of `,
+
+        temple:
+        `As the grand temple of {{cityName}} rises above you while `,
+
+        citadel:
+        `As you approach the grand citadel of {{cityName}} `,
+
         choice1: {
             choice: `say Hello there friend`,
             next: "e1Event1"
@@ -951,12 +970,15 @@ module.exports= [
 
 //ENCOUNTER 2?
     {Event1:{
-        openingText:`You step out of the local pub in {{cityName}}. The night sky is filled with stars, you look up with drunken awe.
+        openingText:`You step out of the local {{pub}} in {{cityName}}. The night sky is filled with stars, you look up with drunken awe.
         you wonder if perhaps the sky was the work of the old gods or perhaps it was the new gods. You wait for a minute pondering before 
         the cold air finally wakes your slumbering mind. The pavement creaks as you move towards the inn. Your nose crinkles as the cool air
         rests on your face. As you turn down a small alley two hooded men step out infront of you. You look behind you and see another has enclosed
         you. A younger man with blonde hair removes his hood and with a smile says "hello there my friend you seem lost, how about we make sure you get 
         home safe... hmmm how about 40 gold to get you home safe.`,
+
+        default:
+        ``,
 
         choice1:{
             choice: `Say "piss off"`,
