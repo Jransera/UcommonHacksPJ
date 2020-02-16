@@ -4,12 +4,10 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const Vector2 = require('victor');
 
-const routes = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/routes.geojson')));
-
-const getBurgs = () => {
+const getBurgs = (filename) => {
     return new Promise((fulfill) => {
         const results = [];
-        fs.createReadStream(path.join(__dirname, '../data/burgs.csv'))
+        fs.createReadStream(filename)
             .pipe(csv())
             .on('data', (data) => results.push(data))
             .on('end', () => {
@@ -18,8 +16,13 @@ const getBurgs = () => {
     });
 };
 
-const parse_burgs = async () => {
-    const burgs = await getBurgs();
+const getRoutes = (filename) => {
+    return JSON.parse(fs.readFileSync(filename));
+};
+
+const parse_burgs = async (filename, routesFilename) => {
+    const burgs = await getBurgs(filename);
+    const routes = await getRoutes(routesFilename);
     burgs.forEach(burg => {
         const lon = burg["Longitude"];
         const lat = burg["Latitude"];
@@ -42,8 +45,9 @@ const parse_burgs = async () => {
     return burgs;
 };
 
-const parse_routes = async () => {
-    const burgs = await getBurgs();
+const parse_routes = async (filename, routesFilename) => {
+    const burgs = await getBurgs(filename);
+    const routes = await getRoutes(routesFilename);
     const rts = routes;
     rts.features.forEach(route => {
         route.burgs = [];
