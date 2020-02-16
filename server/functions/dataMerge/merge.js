@@ -15,6 +15,7 @@ const getStart = async (trees) => {
            chcs.push(setting.Event1[i]);
        }
        else if (typeof setting.Event1[i] == 'string') {
+           console.log(i);
            if (cty[i]) {
                headChoices.push(setting.Event1[i]);
            }
