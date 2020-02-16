@@ -1,17 +1,10 @@
 const pubName = require('../pubNames');
 const connect = require ('./connect');
 const encounters = require('../encounters');
-const fs = require('fs');
 
 const getStart = async () => {
     let trees = await connect.tree();
     let cty = trees[Math.floor(Math.random()* trees.length)];
-    let jsonContent = JSON.stringify(cty);
-    fs.writeFile("output.json", jsonContent, 'utf8', function (err) {
-        if (err) {
-            console.log("An error occured while writing JSON Object");
-        }
-    });
     let nNum = Math.floor(Math.random()*encounters.length);
     let setting= encounters[nNum];
     let opening = setting.Event1.openingText;
@@ -32,12 +25,12 @@ const getStart = async () => {
     let hd = headChoices[Math.floor(Math.random()*headChoices.length)];
     if (hd) {
         hd = hd.replace("{{cityName}}", cty.name);
-        hd = hd.replace("{{pub}}", pubName[math.floor(Math.random()*pubName.length)]);
+        hd = hd.replace("{{pub}}", pubName[Math.floor(Math.random()*pubName.length)]);
     } else {
         hd = setting.Event1.default.replace("{{cityName}}", cty.name);
-        hd = hd.replace("{{pub}}", pubName[math.floor(Math.random()*pubName.length)]);
+        opening = opening.replace("{{pub}}", pubName[Math.floor(Math.random()*pubName.length)]);
+        opening = opening.replace("{{cityName}}", cty.name);
     }
-
     let full = hd.concat(opening);
 
     return {

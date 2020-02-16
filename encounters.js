@@ -978,7 +978,7 @@ module.exports= [
         home safe... hmmm how about 40 gold to get you home safe.`,
 
         default:
-        `You step out of pub`,
+        ``,
 
         choice1:{
             choice: `Say "piss off"`,
