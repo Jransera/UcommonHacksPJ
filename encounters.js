@@ -1,3 +1,4 @@
+
 const combatRoll = () => {
     let roll= Math.floor(Math.random()*20) +1;
 
@@ -969,7 +970,7 @@ module.exports= [
 
 //ENCOUNTER 2?
     {Event1:{
-        openingText:`You step out of the local pub in {{cityName}}. The night sky is filled with stars, you look up with drunken awe.
+        openingText:`You step out of the local {{pub}} in {{cityName}}. The night sky is filled with stars, you look up with drunken awe.
         you wonder if perhaps the sky was the work of the old gods or perhaps it was the new gods. You wait for a minute pondering before 
         the cold air finally wakes your slumbering mind. The pavement creaks as you move towards the inn. Your nose crinkles as the cool air
         rests on your face. As you turn down a small alley two hooded men step out infront of you. You look behind you and see another has enclosed

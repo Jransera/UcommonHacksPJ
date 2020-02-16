@@ -1,3 +1,4 @@
+const pubName = require('../pubNames');
 const connect = require ('./connect');
 const encounters = require('../encounters');
 
@@ -26,8 +27,10 @@ const getStart = async () => {
     let hd = headChoices[Math.floor(Math.random()*headChoices.length)];
     if (hd) {
         hd = hd.replace("{{cityName}}", cty.name);
+        hd = hd.replace("{{pubName}}", pubName[math.floor(Math.random()*pubName.length)]);
     } else {
         hd = setting.Event1.default.replace("{{cityName}}", cty.name);
+        hd = hd.replace("{{pubName}}", pubName[math.floor(Math.random()*pubName.length)]);
     }
 
     return {
