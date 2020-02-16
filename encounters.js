@@ -1,5 +1,5 @@
 const combatRoll = () => {
-    var roll= Math.floor(Math.random()*20) +1;
+    let roll= Math.floor(Math.random()*20) +1;
 
     if(roll <=6){
         return "fail";
@@ -13,11 +13,11 @@ const combatRoll = () => {
         return "succeed";
     }
 
-    if(roll == 20){
+    if(roll === 20){
         return "critical";
     }
 
-}
+};
 
 const alleyCombat =(roll) =>{
     switch(roll){
