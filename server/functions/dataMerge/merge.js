@@ -39,11 +39,11 @@ const getStart = async (trees) => {
     };
 };
 
-const makeChoice = async (enNum, event, choice, city) => {
-    let newEvent = encounters[enNum][choice.next];
-    let chcs = getChoices(enNum, newEvent);
-    let oldChcs = getChoices(enNum, event);
-    let hd = getHeaders(enNum, event);
+const makeChoice = async (nNum, event, choice, city) => {
+    let newEvent = encounters[nNum][choice.next];
+    let chcs = getChoices(nNum, newEvent);
+    let oldChcs = getChoices(nNum, event);
+    let hd = getHeaders(nNum, event);
     let opening;
     if (oldChcs.length === 0) {
         newEvent = encounters.splice(nNum, 1)[Math.floor(Math.random()*encounters.length)];
@@ -51,7 +51,7 @@ const makeChoice = async (enNum, event, choice, city) => {
     if (chcs.length === 0) {
         city = city.neighbors[Math.floor(Math.random() * city.neighbors.length)];
     }
-    full = full.replace("{{cityName}}", city.name);
+    let full = full.replace("{{cityName}}", city.name);
     full = full.replace("{{pub}}", pubName[Math.floor(Math.random()*pubName.length)]);
 
     return {
@@ -98,7 +98,7 @@ const getHeaders = (enNum, event, city) => {
 //     let trees = await connect.tree();
 //     let obj = await getStart();
 //     console.log(obj);
-// })();
+//})();
 
 module.exports.getStart = getStart;
 module.exports.makeChoice = makeChoice;
