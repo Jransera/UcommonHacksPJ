@@ -124,8 +124,4 @@
 "The Wanderlust Tavern",
 "The Watering Hole",
 "Wayfinder's Rest",
-"",
-"",
-"",
-"    ",
-"]
+];
