@@ -16,7 +16,8 @@ module.exports= [
         },
 
         choice2: {
-            choice: `say Not a fan of visitors are you?`
+            choice: `say Not a fan of visitors are you?`,
+            next: "e1Event2"
         }
     },
 

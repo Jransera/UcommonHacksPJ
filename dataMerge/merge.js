@@ -16,11 +16,18 @@ const encounters = require('../encounters');
      opening = setting.encounter1.openingText.replace("{{cityName}}", city);
 
     console.log(opening);
-
-    var choices= [setting.encounter1.choice1.choice];
-        console.log("\n\n\n");
-        console.log(choices[0]);
     
+    var choices =[];
+    
+for (let i in setting.encounter1){
+        if (typeof i == 'object'){ console.log(i); choices.push(i)}
+    }
+    
+        console.log("\n");
+        for(x=0;x<=choices.length;x++)
+        {
+            console.log(choices[x]);
+        }
 
 
 
