@@ -57,7 +57,7 @@ const alleyCombat =(roll) =>{
         have a clue to the god given power you have...`;
        
     }
-}
+};
 
 
 
@@ -68,11 +68,29 @@ module.exports= [
         
         //starting of encounter
         openingText: 
-        `As you walk into the center of {{cityName}} the air is damp and the smell of animals lingers on your nose. 
+        `the air is damp and the smell of animals lingers on your nose. 
         the noise that you heard as you walked in has now been silenced. People stare at you as you walk by them, The children that
         were once running around playing are now hiding behind the adults. A young man stands up off of the bench he was sitting on 
-        and walks to you. "Ahoy there" he calls out.`,         
-        
+        and walks to you. "Ahoy there" he calls out.`,
+
+        default:
+        `As you enter the city of {{cityName}} `,
+
+        capital:
+        `As you enter the capital city of {{cityName}} you notice `,
+
+         walls:
+         `As you walk under the main gate in the walls of {{cityName}} `,
+
+        plaza:
+        `As you enter the central plaza of {{cityName}} the smell of `,
+
+        temple:
+        `As the grand temple of {{cityName}} rises above you while `,
+
+        citadel:
+        `As you approach the grand citadel of {{cityName}} `,
+
         choice1: {
             choice: `say Hello there friend`,
             next: "e1Event1"

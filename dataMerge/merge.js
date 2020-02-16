@@ -6,8 +6,9 @@ const getStart = async () => {
     let cty = trees[Math.floor(Math.random()* trees.length)];
     let nNum = Math.floor(Math.random()*encounters.length);
     let setting= encounters[nNum];
-    let opening = setting.Event1.openingText.replace("{{cityName}}", cty.name);
-    let chcs =[];
+    let opening = setting.Event1.openingText;
+    let chcs = [];
+    let headChoices = [];
     
     for (let i in setting.Event1){
        if (typeof setting.Event1[i] == 'object') {
@@ -15,9 +16,22 @@ const getStart = async () => {
                chcs.push(setting.Event1[i]);
            }
        }
+       else if (typeof setting.Event1[i] == 'string') {
+           if (cty[i]) {
+               headChoices.push(setting.Event1[i]);
+           }
+       }
+    }
+
+    let hd = headChoices[Math.floor(Math.random()*headChoices.length)];
+    if (hd) {
+        hd = hd.replace("{{cityName}}", cty.name);
+    } else {
+        hd = setting.Event1.default.replace("{{cityName}}", cty.name);
     }
 
     return {
+        head: hd,
         openingText: opening,
         choices: chcs,
         city: cty,
@@ -40,6 +54,7 @@ const makeChoice = async (enNum, event, choice, city) => {
     } else {
         opening = encounters[enNum][choice.next].openingText.replace("{{cityName}}", city.name);
     }
+
     return {
         openingText: opening,
         choices: chcs,
@@ -59,3 +74,7 @@ const getChoices = (enNum, event) => {
     }
     return choices;
 };
+(async () => {
+    let obj = await getStart();
+    console.log(obj);
+})();
