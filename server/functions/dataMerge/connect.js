@@ -53,9 +53,9 @@ const burgObject = (burg, burgs, routes) => {
     return obj;
 };
 
-const createTree = async () => {
-    const burgs = await parser.burgs().then();
-    const routes = await parser.routes().then();
+const createTree = async (filename, routesFilename) => {
+    const burgs = await parser.burgs(filename, routesFilename);
+    const routes = await parser.routes(filename, routesFilename);
     const sets = [];
     while (burgs != null && burgs.length !== 0) {
         let burg = burgs[0];
