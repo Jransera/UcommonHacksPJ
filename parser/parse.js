@@ -18,7 +18,7 @@ const getBurgs = () => {
     });
 };
 
-const parse = async () => {
+const parse_burgs = async () => {
     const burgs = await getBurgs();
     burgs.forEach(burg => {
         const lon = burg["Longitude"];
@@ -42,4 +42,32 @@ const parse = async () => {
     return burgs;
 };
 
-module.exports = parse;
+const parse_routes = async () => {
+    const burgs = await getBurgs();
+    const rts = routes;
+    rts.features.forEach(route => {
+        route.burgs = [];
+    });
+    rts.features.forEach(route => {
+        const coords = route.geometry.coordinates;
+        coords.forEach(pos => {
+            burgs.forEach(burg => {
+                const lon = burg["Longitude"];
+                const lat = burg["Latitude"];
+                const vec1 = Vector2(pos[0], pos[1]);
+                const vec2 = Vector2(lon, lat);
+                const id = burg.Id;
+                if (vec1.distance(vec2) < 1) {
+                    if (!route.burgs.includes(id)) {
+                        route.burgs.push(id);
+                    }
+                }
+            });
+        });
+    });
+
+    return rts;
+};
+
+exports.routes = parse_routes;
+exports.burgs = parse_burgs;
