@@ -7,6 +7,8 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 
 const parse = require('./parser/parse');
+const connect = require('./dataMerge/connect');
+const merge = require('./dataMerge/merge');
 
 admin.initializeApp({
     credential: admin.credential.applicationDefault(),
@@ -18,21 +20,45 @@ const bucket = admin.storage().bucket();
 
 const app = dialogflow({ debug: true });
 
-const doEncounter = (conv) => {
+const doEncounter = (conv, isStart) => {
     // conv.ask(`Your last response was: ${conv.data.lastResponse}`);
-    conv.ask(`This is encounter ${conv.data.pos}. You can do 1, 2, or 3. What do you do?`);
+    if (isStart) {
+        let trees = data.trees;
+        let data = merge.getStart(trees);
+        conv.data.fullData = data;
+        let txt = data.text + " . Your options are: ";
+        data.choices.forEach((choice, index) => {
+            txt += " " + (index + 1) + ". " + choice + ". ";
+        });
+        conv.ask(txt);
+    }
+    else {
+        let num = conv.data.response - 1;
+        let fullData = conv.data.fullData;
+        let data = merge.makeChoice(fullData.enNum, fullData.event, fullData.choices[num], fullData.city);
+        conv.data.fullData = data;
+        let txt = data.text + " . Your options are: ";
+        data.choices.forEach((choice, index) => {
+            txt += " " + (index + 1) + ". " + choice + ". ";
+        });
+        conv.ask(txt);
+    }
+
+    // conv.ask(`This is encounter ${conv.data.pos}. You can do 1, 2, or 3. What do you do?`);
     conv.data.pos++;
 };
 
 let data = {};
 
 const doProcessing = async (conv) => {
-    if (!data.burgs) {
-        const routes = await parse.routes(conv.data.csvFilename, conv.data.jsonFilename);
-        const burgs = await parse.burgs(conv.data.csvFilename, conv.data.jsonFilename);
-        data.routes = routes;
-        data.burgs = burgs;
-    }
+    data.trees = await connect.tree(conv.data.csvFilename, conv.data.jsonFilename);
+    // if (!data.burgs) {
+    //     data.trees = await connect.tree(conv.data.csvFilename, conv.data.jsonFilename);
+    //     // const routes = await parse.routes(conv.data.csvFilename, conv.data.jsonFilename);
+    //     // const burgs = await parse.burgs(conv.data.csvFilename, conv.data.jsonFilename);
+    //     // data.routes = routes;
+    //     // data.burgs = burgs;
+    // }
 };
 
 app.intent('dnd_entry', async (conv, { gameId }) => {
@@ -56,8 +82,8 @@ app.intent('dnd_entry', async (conv, { gameId }) => {
 
 app.intent('dnd_ready', (conv, {}) => {
     try {
-        if (data.routes) {
-            doEncounter(conv);
+        if (data.trees) {
+            doEncounter(conv, true);
         }
         else {
             conv.ask("The game is still loading. Say ready when you are ready");
@@ -72,8 +98,8 @@ app.intent('dnd_ready', (conv, {}) => {
 app.intent('dnd_encounter', (conv, { num }) => {
     try {
         if (num >= 1 && num <= 3) {
-            conv.data.lastResponse = num;
-            doEncounter(conv);
+            conv.data.response = num;
+            doEncounter(conv, false);
         }
         else {
             conv.ask("You must say option 1, option 2, or option 3");

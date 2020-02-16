@@ -2,8 +2,7 @@ const pubName = require('../pubNames');
 const connect = require ('./connect');
 const encounters = require('../encounters');
 
-const getStart = async () => {
-    let trees = await connect.tree();
+const getStart = async (trees) => {
     let cty = trees[Math.floor(Math.random()* trees.length)];
     let nNum = Math.floor(Math.random()*encounters.length);
     let setting= encounters[nNum];
@@ -40,6 +39,17 @@ const getStart = async () => {
         enNum: nNum,
         event: encounters[nNum].Event1
     };
+};
+
+const getChoices = (enNum, event) => {
+    let choices = [];
+
+    for (let i in encounters[enNum][event]) {
+        if (typeof encounters[enNum][event][i] == 'object') {
+            choices.push(encounters[enNum][event][i]);
+        }
+    }
+    return choices;
 };
 
 const makeChoice = async (enNum, event, choice, city) => {
@@ -83,19 +93,13 @@ const makeChoice = async (enNum, event, choice, city) => {
     }
 };*/
 
-const getChoices = (enNum, event) => {
-    let choices = [];
 
-    for (let i in encounters[enNum][event]) {
-        if (typeof encounters[enNum][event][i] == 'object') {
-            choices.push(encounters[enNum][event][i]);
-        }
-    }
-    return choices;
-};
+// (async () => {
+//     let trees = await connect.tree();
+//     let obj = await getStart();
+//     console.log(obj);
+// })();
 
-
-(async () => {
-    let obj = await getStart();
-    console.log(obj);
-})();
+module.exports.getStart = getStart;
+module.exports.makeChoice = makeChoice;
+module.exports.getChoices = getChoices;
