@@ -1,3 +1,65 @@
+const combatRoll = () => {
+    var roll= Math.floor(Math.random()*20) +1;
+
+    if(roll <=6){
+        return "fail";
+    }
+
+    if(roll>6 && roll <=14){
+        return "average success";
+    }
+
+    if(roll>15 && roll <=19){
+        return "succeed";
+    }
+
+    if(roll == 20){
+        return "critical";
+    }
+
+}
+
+const alleyCombat =(roll) =>{
+    switch(roll){
+        case "fail":
+        return `You go to swing at the man in front of you. As you step you feel your leg buckle underneath you. Your drunken balance
+        is not what it used to be. The man side steps your attack and you feel a thud on the back of your neck. As you awake you find 
+        yourself laying in the alley you were cornered in. You find that you're now missing some of the items from your backpack. On 
+        the wall infront of you, you see the words "Get out of town". Maybe one of the nearby towns has kinder people?`;
+        
+    
+        case "average success":
+        return `You go to swing at the man infront of you. As you cock back your arm you feel your elbow connect with the man behind
+        you. The blade sinks into your skin and the cold steel send a shiver into your spine. Your first fires foward from the shock 
+        and you connect with the blonde man. The third man freezes in shock for a slight moment. In this moment you are able to slip 
+        past him and drunkenly run to the inn. You fall into your bed and awake the next morning covered in filth and blood. you stare
+        out the window looking for the three men as one of the housekeepers bandages your wound. Perhaps a couple of days in hiding will 
+        let you slip out of town unnoticed...`;
+        
+
+        case "succeed":
+        return `You go to swing at the man infront of you. While cocking your arm back you throw your elbow in the the nose of the man
+        behind you . You step foward as you swing and just barely miss the blade sinking into your back. You throw your fist into the 
+        blonde man. There is a lound crunch as your knuckle connects with his jaw. You duck under his wildly swung quarterstaff and throw
+        your elbow into the last man standing. He bounces of the wall and you throw a wild headbutt to meet his whiplashing head. He crumbles
+        to the ground while grabbing his face. You drunkenly walk back to your inn with nothing more than a minor headache. Hopefully the next
+        town will have smarter criminals...`;
+        
+
+        case "critical":
+        return`You go to swing at the man infront of you. As you step to throw your punch, you feel a deep warmth start to build in 
+        your stomach. As you throw the punch, the warmth moves to your hand. Your punch lands with a glorious crack, the warmth in your
+        hand changes to a bright hot light. The ground shakes, the wall to your left crumbles slightly, the heavens open and the gods send
+        a stream of lighting and thunder to smite the three men. As the light fades the smell of burning flesh fills your nose, you look down
+        and see the three men, now ash, blowing in the cold night air. You look up to the now open sky as it starts to close. You continue 
+        to wonder if it was the old or new gods that sent you aid. Yet the thought quickly passes out of your mind as the alchohol starts 
+        make its way back up. You run to the Inn and after vomiting your nights drinks, you calmly roll into bed. Maybe the next town will
+        have a clue to the god given power you have...`;
+       
+    }
+}
+
+
 
 module.exports= [
     
@@ -886,7 +948,7 @@ module.exports= [
     },
 
 
-    
+
 //ENCOUNTER 2?
     {Event1:{
         openingText:`You step out of the local pub in {{cityName}}. The night sky is filled with stars, you look up with drunken awe.
@@ -957,63 +1019,3 @@ module.exports= [
 ];
 
 
-const combatRoll = () => {
-    var roll= Math.floor(Math.random()*20) +1;
-
-    if(roll <=6){
-        return "fail";
-    }
-
-    if(roll>6 && roll <=14){
-        return "average success";
-    }
-
-    if(roll>15 && roll <=19){
-        return "succeed";
-    }
-
-    if(roll == 20){
-        return "critical";
-    }
-
-}
-
-const alleyCombat =(roll) =>{
-    switch(roll){
-        case "fail":
-        return `You go to swing at the man in front of you. As you step you feel your leg buckle underneath you. Your drunken balance
-        is not what it used to be. The man side steps your attack and you feel a thud on the back of your neck. As you awake you find 
-        yourself laying in the alley you were cornered in. You find that you're now missing some of the items from your backpack. On 
-        the wall infront of you, you see the words "Get out of town". Maybe one of the nearby towns has kinder people?`;
-        
-    
-        case "average success":
-        return `You go to swing at the man infront of you. As you cock back your arm you feel your elbow connect with the man behind
-        you. The blade sinks into your skin and the cold steel send a shiver into your spine. Your first fires foward from the shock 
-        and you connect with the blonde man. The third man freezes in shock for a slight moment. In this moment you are able to slip 
-        past him and drunkenly run to the inn. You fall into your bed and awake the next morning covered in filth and blood. you stare
-        out the window looking for the three men as one of the housekeepers bandages your wound. Perhaps a couple of days in hiding will 
-        let you slip out of town unnoticed...`;
-        
-
-        case "succeed":
-        return `You go to swing at the man infront of you. While cocking your arm back you throw your elbow in the the nose of the man
-        behind you . You step foward as you swing and just barely miss the blade sinking into your back. You throw your fist into the 
-        blonde man. There is a lound crunch as your knuckle connects with his jaw. You duck under his wildly swung quarterstaff and throw
-        your elbow into the last man standing. He bounces of the wall and you throw a wild headbutt to meet his whiplashing head. He crumbles
-        to the ground while grabbing his face. You drunkenly walk back to your inn with nothing more than a minor headache. Hopefully the next
-        town will have smarter criminals...`;
-        
-
-        case "critical":
-        return`You go to swing at the man infront of you. As you step to throw your punch, you feel a deep warmth start to build in 
-        your stomach. As you throw the punch, the warmth moves to your hand. Your punch lands with a glorious crack, the warmth in your
-        hand changes to a bright hot light. The ground shakes, the wall to your left crumbles slightly, the heavens open and the gods send
-        a stream of lighting and thunder to smite the three men. As the light fades the smell of burning flesh fills your nose, you look down
-        and see the three men, now ash, blowing in the cold night air. You look up to the now open sky as it starts to close. You continue 
-        to wonder if it was the old or new gods that sent you aid. Yet the thought quickly passes out of your mind as the alchohol starts 
-        make its way back up. You run to the Inn and after vomiting your nights drinks, you calmly roll into bed. Maybe the next town will
-        have a clue to the god given power you have...`;
-       
-    }
-}
