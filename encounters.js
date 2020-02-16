@@ -1,7 +1,70 @@
+const combatRoll = () => {
+    let roll= Math.floor(Math.random()*20) +1;
+
+    if(roll <=6){
+        return "fail";
+    }
+
+    if(roll>6 && roll <=14){
+        return "average success";
+    }
+
+    if(roll>15 && roll <=19){
+        return "succeed";
+    }
+
+    if(roll === 20){
+        return "critical";
+    }
+
+};
+
+const alleyCombat =(roll) =>{
+    switch(roll){
+        case "fail":
+        return `You go to swing at the man in front of you. As you step you feel your leg buckle underneath you. Your drunken balance
+        is not what it used to be. The man side steps your attack and you feel a thud on the back of your neck. As you awake you find 
+        yourself laying in the alley you were cornered in. You find that you're now missing some of the items from your backpack. On 
+        the wall infront of you, you see the words "Get out of town". Maybe one of the nearby towns has kinder people?`;
+        
+    
+        case "average success":
+        return `You go to swing at the man infront of you. As you cock back your arm you feel your elbow connect with the man behind
+        you. The blade sinks into your skin and the cold steel send a shiver into your spine. Your first fires foward from the shock 
+        and you connect with the blonde man. The third man freezes in shock for a slight moment. In this moment you are able to slip 
+        past him and drunkenly run to the inn. You fall into your bed and awake the next morning covered in filth and blood. you stare
+        out the window looking for the three men as one of the housekeepers bandages your wound. Perhaps a couple of days in hiding will 
+        let you slip out of town unnoticed...`;
+        
+
+        case "succeed":
+        return `You go to swing at the man infront of you. While cocking your arm back you throw your elbow in the the nose of the man
+        behind you . You step foward as you swing and just barely miss the blade sinking into your back. You throw your fist into the 
+        blonde man. There is a lound crunch as your knuckle connects with his jaw. You duck under his wildly swung quarterstaff and throw
+        your elbow into the last man standing. He bounces of the wall and you throw a wild headbutt to meet his whiplashing head. He crumbles
+        to the ground while grabbing his face. You drunkenly walk back to your inn with nothing more than a minor headache. Hopefully the next
+        town will have smarter criminals...`;
+        
+
+        case "critical":
+        return`You go to swing at the man infront of you. As you step to throw your punch, you feel a deep warmth start to build in 
+        your stomach. As you throw the punch, the warmth moves to your hand. Your punch lands with a glorious crack, the warmth in your
+        hand changes to a bright hot light. The ground shakes, the wall to your left crumbles slightly, the heavens open and the gods send
+        a stream of lighting and thunder to smite the three men. As the light fades the smell of burning flesh fills your nose, you look down
+        and see the three men, now ash, blowing in the cold night air. You look up to the now open sky as it starts to close. You continue 
+        to wonder if it was the old or new gods that sent you aid. Yet the thought quickly passes out of your mind as the alchohol starts 
+        make its way back up. You run to the Inn and after vomiting your nights drinks, you calmly roll into bed. Maybe the next town will
+        have a clue to the god given power you have...`;
+       
+    }
+}
+
+
 
 module.exports= [
     
-    {encounter1: {
+    //encounter1
+    {Event1: {
         
         //starting of encounter
         openingText: 
@@ -884,23 +947,75 @@ module.exports= [
     }
     },
 
+
+
 //ENCOUNTER 2?
-    {encounter2:{
+    {Event1:{
         openingText:`You step out of the local pub in {{cityName}}. The night sky is filled with stars, you look up with drunken awe.
         you wonder if perhaps the sky was the work of the old gods or perhaps it was the new gods. You wait for a minute pondering before 
-        the cold air finally wakes your slumbering mind. The pavement creaks as you `,
+        the cold air finally wakes your slumbering mind. The pavement creaks as you move towards the inn. Your nose crinkles as the cool air
+        rests on your face. As you turn down a small alley two hooded men step out infront of you. You look behind you and see another has enclosed
+        you. A younger man with blonde hair removes his hood and with a smile says "hello there my friend you seem lost, how about we make sure you get 
+        home safe... hmmm how about 40 gold to get you home safe.`,
 
         choice1:{
-            choice: ``,
-            next: ``,
+            choice: `Say "piss off"`,
+            next: `e2e1Event1`,
         },
         choice2:{
-            choice:``,
-            next:``,
+            choice:`pay him the money`,
+            next:`e2e1Event2`,
         }
-    }}
+    },
+    e2e1Event1:{
+        openingText:`"woah there mate." he responds as you try to push through the two men. He pushes you back slightly. As you stumble 
+        backwards, you feel a small point in the center of your back. "where do you think youre going" whispers the man behind you. 
+        "my friend gave you a pretty good deal there, I would take it." The blonde man infront of you pulls out a quarterstaff from under
+        his cloak. The staff is made of a dark wood making it near impossible to see aside from the leather wrapt that he is holding it from.
+        "Listen to my friend, We dont want you to have an accident" you hear the third figure calmly say.`,
+
+        choice1:{
+            choice: `Attack them`,
+            next: `e2e1e1Event1`,
+        },
+        choice2:{
+            choice:`pay him the money`,
+            next:`e2e1e1Event2`,
+        }
+    },
+
+
+    //attack them
+    e2e1e1Event1:{
+        openingText: alleyCombat(combatRoll),
+
+    },
+
+
+    //pay them
+    e2e1e1Event2:{
+        openingText:`As you hand over your coin, the man infront of you gives you a wide smile. "haha see my friend, that was easy. now lets
+        get you home." The two men infront of you and let you step aside. As you move past the blonde man you feel a sudden thud on the back of your
+        head... As you awake you find yourself laying in the alley you were cornered in. You find that you're now missing some of the items from
+        your backpack. On the wall infront of you, you see the words "Get out of town". Maybe one of the nearby towns has kinder people? `,
+    },
+
+//initially pay them
+    e2e1Event2:{
+        openingText:`As you hand over your coin, the man infront of you gives you a wide smile. "haha see my friend, that was easy. now lets
+        get you home." The two men infront of you and let you step aside. As you move past the blonde man you feel a sudden thud on the back of your
+        head... As you awake you find yourself laying in the alley you were cornered in. You find that you're now missing some of the items from
+        your backpack. On the wall infront of you, you see the words "Get out of town". Maybe one of the nearby towns has kinder people? `,
+    }
+
+
+
+
+    }
 
 
 
 
 ];
+
+
