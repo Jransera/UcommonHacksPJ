@@ -1,4 +1,4 @@
- module.export = [
+ module.exports = [
 "The Bard's Tale Tavern",
 "The Bard's Trousers",
 "The Black Barnacle",
