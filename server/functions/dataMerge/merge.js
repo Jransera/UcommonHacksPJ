@@ -23,15 +23,13 @@ const getStart = async () => {
     }
 
     let hd = headChoices[Math.floor(Math.random()*headChoices.length)];
-    if (hd) {
-        hd = hd.replace("{{cityName}}", cty.name);
-        hd = hd.replace("{{pub}}", pubName[Math.floor(Math.random()*pubName.length)]);
-    } else {
-        hd = setting.Event1.default.replace("{{cityName}}", cty.name);
-        opening = opening.replace("{{pub}}", pubName[Math.floor(Math.random()*pubName.length)]);
-        opening = opening.replace("{{cityName}}", cty.name);
+
+    if (!hd) {
+        hd = setting.Event1.default;
     }
     let full = hd.concat(opening);
+    full = full.replace("{{cityName}}", cty.name);
+    full = full.replace("{{pub}}", pubName[Math.floor(Math.random()*pubName.length)]);
 
     return {
         text: full,
@@ -42,30 +40,32 @@ const getStart = async () => {
     };
 };
 
-const makeChoice = async (enNum, event, choice, city) => {
-    let newEvent = encounters[enNum][choice.next];
-    let chcs = getChoices(enNum, newEvent);
-    let oldChcs = getChoices(enNum, event);
-    //let hd = getHeaders(enNum, event);
-    let opening;
+const makeChoice = async (nNum, event, choice, city) => {
+    let newEvent = encounters[nNum][choice.next];
+    let chcs = getChoices(nNum, newEvent);
+    let oldChcs = getChoices(nNum, event);
+    let hd = getHeaders(nNum, event, city);
+    let opening = encounters[nNum][choice.next].openingText;
+    let full = hd.concat(opening);
     if (oldChcs.length === 0) {
-        newEvent = encounters.splice(enNum, 1)[Math.floor(Math.random()*encounters.length)];
+        newEvent = encounters.splice(nNum, 1)[Math.floor(Math.random()*encounters.length)];
     }
     if (chcs.length === 0) {
-        let newCity = city.neighbors[Math.floor(Math.random()*city.neighbors.length)];
-        opening = encounters[enNum][choice.next].openingText.replace("{{cityName}}", newCity.name);
-    } else {
-        opening = encounters[enNum][choice.next].openingText.replace("{{cityName}}", city.name);
+        city = city.neighbors[Math.floor(Math.random() * city.neighbors.length)];
     }
+    full = full.replace("{{cityName}}", city.name);
+    full = full.replace("{{pub}}", pubName[Math.floor(Math.random()*pubName.length)]);
 
     return {
-        openingText: opening,
+        text: full,
         choices: chcs,
-        city: newCity
+        city: city,
+        enNum: nNum,
+        event: newEvent
     };
 };
 
-/*const getHeaders = (enNum, event) => {
+const getHeaders = (enNum, event, city) => {
     let head = [];
 
     for (let i in encounters[enNum][event]) {
@@ -73,15 +73,16 @@ const makeChoice = async (enNum, event, choice, city) => {
             head.push(encounters[enNum][event][i]);
         }
     }
-    head.push(encounters[enNum][event])
+    head.push(encounters[enNum][event]);
 
-    let hd = headChoices[Math.floor(Math.random()*headChoices.length)];
+    let hd = head[Math.floor(Math.random()*head.length)];
     if (hd) {
-        hd = hd.replace("{{cityName}}", cty.name);
+        hd = hd.replace("{{cityName}}", city.name);
     } else {
-        hd = setting.Event1.default.replace("{{cityName}}", cty.name);
+        hd = setting.Event1.default.replace("{{cityName}}", city.name);
     }
-};*/
+    return hd;
+};
 
 const getChoices = (enNum, event) => {
     let choices = [];
