@@ -4,12 +4,13 @@ const encounters = require('../encounters');
 
 //const connections = parser.burgs();
 //const loc = {};
+
 (async () => {
     const trees = await connect.tree();
 
     //console.log(trees);
 
-    var city = trees[Math.floor(Math.random()* trees.length)].name;
+    let city = trees[Math.floor(Math.random()* trees.length)].name;
 
     console.log("encounter:");
     let setting= encounters[0];
