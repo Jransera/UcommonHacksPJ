@@ -12,21 +12,25 @@ const encounters = require('../encounters');
     var city = trees[Math.floor(Math.random()* trees.length)].name;
 
     console.log("encounter:");
-     var setting= encounters[0];
-     opening = setting.encounter1.openingText.replace("{{cityName}}", city);
+    let setting= encounters[0];
+    let opening = setting.encounter1.openingText.replace("{{cityName}}", city);
 
     console.log(opening);
     
-    var choices =[];
+    let choices =[];
     
-for (let i in setting.encounter1){
-        if (typeof i == 'object'){ console.log(i); choices.push(i)}
+    for (let i in setting.encounter1){
+       if (typeof setting.encounter1[i] == 'object') {
+           if (setting.encounter1[i] !== undefined) {
+               choices.push(setting.encounter1[i]);
+           }
+       }
     }
     
         console.log("\n");
-        for(x=0;x<=choices.length;x++)
+        for(let x = 0; x < choices.length; x++)
         {
-            console.log(choices[x]);
+            console.log(choices[x].choice);
         }
 
 
