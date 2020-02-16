@@ -59,6 +59,3 @@ const getChoices = (enNum, event) => {
     }
     return choices;
 };
-
-getStart();
-
